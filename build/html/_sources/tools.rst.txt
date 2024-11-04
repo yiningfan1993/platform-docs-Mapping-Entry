@@ -4,11 +4,11 @@ Interface Walkthrough
 
 Once users entered the Workflow Assembler Application, they will see the interface below, which contains the following main functions.
 
- .. figure:: /images/GeneralInterface.png
+ .. figure:: /images/OrderListInterface.png
     :align: center
-    :alt: General Interface
+    :alt: OrderListInterface
 
-    *General Interface of Workflow Assembler App*
+    *General Interface of Order List*
 
 Sort
 ########

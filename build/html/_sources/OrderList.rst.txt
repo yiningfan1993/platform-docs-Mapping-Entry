@@ -45,6 +45,7 @@ This space allows users to select desired features (Catetitle) to be extracted f
         * **3D Buildings**: includes 3d_building, 3d_single_tree, DSM, and ortho_mosaic
         * **2D Landcover**: includes building, road, manmade and natural landcover features
         * **Advanced Transportation**: includes different types of centerlines, road marking, signs and other transportation features that can be used for guiding and navigation
+    * For definition of each Catetitle, please refer to Glossary for more details.
 
 
 #. Users can select the category in general or select second-tier categories to further differentiate the features
@@ -171,7 +172,11 @@ Delivery Settings
 
 Users can define how the data should be delivered by providing the following information in the delivery settings section:
 
-#. **Delivery Projection**: projection system that should be applied to the vector result.
+#. **Delivery Projection**: projection system that should be applied to the vector result. The following options are available:
+    * WGS84
+    * WGS84/UTM
+    * OTHER
+    * Provide EPSG and added as an option
 #. **Delivery Format**: data format that the vector result will be delivered in
 #. **Expect Delivery Date**: by clicking on the "Estimate Delivery" button to the right, users can obtain the earliest date that the system can deliver the vector results. Users can select any date after the system estimated earliest delivery date.
 #. **Deliver Grid Size**: grid can be applied to the vector result to split larger polygon into smaller pieces. 
@@ -181,7 +186,7 @@ Click on "Save & Continue" to apply all changes and move to **Order Payment** se
 Order Payment
 =====================
 
-There are three stages of order payment.
+Users can follow the three stages of payment below to complete the payment process.
 
 Payment is being Calculated
 ----------------------------
@@ -230,7 +235,7 @@ Users can delete an order by clicking on the |DeleteAOI| button in the action co
 
 Delivery |Delivery|
 ********************
-
+Email notification will be sent to order owner once the vector result is delivered. By clicking on the |Delivery| button, users can view the deliveries and their path on the platform. To download the vector results
 
 
 .. |CreateOrder| image:: /images/CreateOrder.png
