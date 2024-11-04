@@ -20,7 +20,7 @@ Service type:
     * Modeling & Annotation: the order will apply modeling and Ecopia annotation as the service;
     * Modeling: the order will apply modeling and users will annotate the vector result (if applicable) within their own organization.
 
-Click on "Submit" after setting the order name and selecting service type, the order list page will jump to basic settings page for users to provide more detailed information.
+Click on "Submit" after setting the order name and selecting service type, the order list page will jump to basic settings page for users to provide more detailed information. The settings page can also be opened by clicking |ViewDetails| in the action column of each order.
 
 Action: Settings |ViewDetails|
 *************************************
@@ -173,10 +173,12 @@ Delivery Settings
 Users can define how the data should be delivered by providing the following information in the delivery settings section:
 
 #. **Delivery Projection**: projection system that should be applied to the vector result. The following options are available:
+
     * WGS84
     * WGS84/UTM
     * OTHER
     * Provide EPSG and added as an option
+
 #. **Delivery Format**: data format that the vector result will be delivered in
 #. **Expect Delivery Date**: by clicking on the "Estimate Delivery" button to the right, users can obtain the earliest date that the system can deliver the vector results. Users can select any date after the system estimated earliest delivery date.
 #. **Deliver Grid Size**: grid can be applied to the vector result to split larger polygon into smaller pieces. 
@@ -200,7 +202,7 @@ At this stage, Ecopia production admin has been notified and review the payment 
 
 Payment Can Be Made Now
 ----------------------------
-At this stage, Ecopia production admin has reviewed and approved the order and amount to be paid. 
+At this stage, Ecopia production admin has reviewed and approved the order and amount to be paid. Order owner will be notified via Email once the order reach this stage.
 
 .. figure:: /images/PayNow.png
     :alt: PayNow
