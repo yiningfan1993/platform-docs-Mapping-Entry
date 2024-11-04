@@ -18,7 +18,7 @@ import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
-project = 'Ecopia Workflow Assembler Application'
+project = 'Ecopia Mapping Entry'
 copyright = '2024, Ecopia Tech Corporation'
 author = 'Ecopia Tech Corporation'
 

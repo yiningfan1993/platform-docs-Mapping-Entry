@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interface Walkthrough &mdash; Ecopia Mapping Entry 1.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/EcopiaCircleClear.png"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Ecopia Mapping Entry
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Components</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="OrderList.html">1. Order List</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Ecopia Mapping Entry</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Interface Walkthrough</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="interface-walkthrough">
+<h1>Interface Walkthrough<a class="headerlink" href="#interface-walkthrough" title="Permalink to this headline"></a></h1>
+<p>Once users entered the Workflow Assembler Application, they will see the interface below, which contains the following main functions.</p>
+<blockquote>
+<div><figure class="align-center" id="id1">
+<img alt="General Interface" src="_images/GeneralInterface.png" />
+<figcaption>
+<p><span class="caption-text"><em>General Interface of Workflow Assembler App</em></span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+<section id="sort">
+<h2>Sort<a class="headerlink" href="#sort" title="Permalink to this headline"></a></h2>
+<p>Sort function allows users to sort the items in the workflow element list based on the following criteria:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p><strong>Alphabetic</strong> <img alt="Alphabetic" src="_images/Alphabetic.png" style="height: 21px;" />: sort item list based on alphabetic order. This is the default order for all lists.</p></li>
+<li><p><strong>Created Time</strong> <img alt="CreateTime" src="_images/CreateTime.png" style="height: 21px;" />: sort item list based on time the items are created in descending order.</p></li>
+</ol>
+</div></blockquote>
+</section>
+<section id="item-types-dropdown">
+<h2>Item Types Dropdown<a class="headerlink" href="#item-types-dropdown" title="Permalink to this headline"></a></h2>
+<p>Users can switch the list among three workflow items:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Gallery</p></li>
+<li><p>Workflow/Space</p></li>
+<li><p>Worker</p></li>
+</ol>
+</div></blockquote>
+<p>Users can also use the search function below the dropdown to quickly locate the target item in the list.</p>
+</section>
+<section id="create-new-item">
+<h2>Create New Item<a class="headerlink" href="#create-new-item" title="Permalink to this headline"></a></h2>
+<p>By clicking on the <span class="guilabel">Create</span> button, users can create a new workflow element with other customizations.</p>
+<p>To create a new gallery, the following information needs to be provided:</p>
+<blockquote>
+<div><blockquote>
+<div><ol class="arabic simple">
+<li><p><strong>Type</strong>: Gallery</p></li>
+<li><p><strong>DAG Class</strong>: Select between 2D and 3D</p></li>
+<li><p><strong>Name</strong>: Name for the newly created Gallery. Can only contain letters, numbers and “_”.</p></li>
+<li><p><strong>Advanced Config (optional)</strong>: Set advanced configuration for this gallery if necessary.</p></li>
+</ol>
+</div></blockquote>
+<figure class="align-center" id="id2">
+<img alt="Create New Gallery" src="_images/CreateNewGallery.png" />
+<figcaption>
+<p><span class="caption-text"><em>Create New Gallery</em></span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>To create a new workflow/space, the following information needs to be provided:</p>
+<blockquote>
+<div><blockquote>
+<div><ol class="arabic simple">
+<li><p><strong>Type</strong>: Workflow/Space</p></li>
+<li><p><strong>Sub Type</strong>: Select between workflow and space</p></li>
+<li><p><strong>Name</strong>: Name for the workflow/space. Can only contain letters, numbers and “_”.</p></li>
+<li><p><strong>Workflow Type</strong>: Specify the workflow type (new workflow only)</p></li>
+<li><p><strong>Advanced Configuration (optional)</strong>: Set advanced configuration for this gallery if necessary.</p></li>
+</ol>
+</div></blockquote>
+<figure class="align-center" id="id3">
+<img alt="Create New Workflow/Space" src="_images/CreateNewWorkflowSpace.png" />
+<figcaption>
+<p><span class="caption-text"><em>Create New Workflow/Space</em></span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+</section>
+<section id="item-list">
+<h2>Item List<a class="headerlink" href="#item-list" title="Permalink to this headline"></a></h2>
+<p>All existing items will be listed in the item list. The list can be swtiched based on different types of items in the <a class="reference internal" href="#item-types-dropdown"><span class="std std-ref">Item Types Dropdown</span></a>.</p>
+<blockquote>
+<div><blockquote>
+<div><ol class="arabic simple">
+<li><p>By clicking on the title of the items in the list, the item details will be displayed in the <a class="reference internal" href="#dag-graph-area"><span class="std std-ref">DAG Graph Area</span></a>.</p></li>
+<li><p>By hovering the cursor over the title of the item in the list, users can click <img alt="Copy" src="_images/Copy.png" style="height: 21px;" /> to copy the name of the item.</p></li>
+<li><p>By clicking on the <img alt="Delete" src="_images/Delete.png" style="height: 21px;" /> button next to the item title, the item can be deleted from the list.</p></li>
+</ol>
+</div></blockquote>
+<figure class="align-center" id="id4">
+<img alt="Item List" src="_images/ItemList.png" style="height: 300px;" />
+<figcaption>
+<p><span class="caption-text"><em>Item List</em></span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+</section>
+<section id="dag-graph-area">
+<h2>DAG Graph Area<a class="headerlink" href="#dag-graph-area" title="Permalink to this headline"></a></h2>
+<p>DAG graph area depicts the workflow of selected item. Users can also customize the working item by adding or re-directing the process flow in the graph area.</p>
+<section id="view-only-mode">
+<h3>View-Only Mode<a class="headerlink" href="#view-only-mode" title="Permalink to this headline"></a></h3>
+<p>In view-only mode, users can view details of each node of the workflow by double-clicking on the dot that represents the node in the DAG graph.</p>
+<blockquote>
+<div><figure class="align-center" id="id5">
+<img alt="View Node Detail" src="_images/ViewNodeDetail.gif" />
+<figcaption>
+<p><span class="caption-text"><em>View Node Detail</em></span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+<p>Users can go back to the previous workflow by clicking on the name in the hierarchy.</p>
+<blockquote>
+<div><figure class="align-center" id="id6">
+<img alt="Go Back to Workflow" src="_images/GoBacktoWorkflow.gif" />
+<figcaption>
+<p><span class="caption-text"><em>Go Back to Workflow</em></span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+<p>To view more details of the workflow, the following actions are available:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p><strong>Dragging Node</strong>: Users can hold-click to drag the nodes inside of the DAG graph to gain better view of the workflow.</p></li>
+<li><p><strong>Panning Graph</strong>: Users can pan to different area of the graph by hold-click on the empty space of the graph.</p></li>
+<li><p><strong>Zoom In/Out</strong>: Users can zoom in/out in the graph area by scrolling the mouse wheel.</p></li>
+</ol>
+</div></blockquote>
+</section>
+<section id="edit-mode">
+<h3>Edit Mode<a class="headerlink" href="#edit-mode" title="Permalink to this headline"></a></h3>
+<p>By clicking on the <img alt="Edit" src="_images/Edit.png" style="height: 21px;" /> button on the top-right corner of the window, the edit mode is activated.</p>
+<p>Under edit mode, users can perform following actions in the DAG graph.</p>
+<section id="add-remove-node">
+<h4>Add/Remove Node<a class="headerlink" href="#add-remove-node" title="Permalink to this headline"></a></h4>
+<p>By clicking the <span class="guilabel">+</span> button on top of the DAG graph area, users can add new node into the DAG graph.</p>
+<p>In the prompt window, users can either filter the selections using the <strong>Filter Tags</strong> or directly type the node name in the dropdown below to quickly locate the target note.</p>
+<blockquote>
+<div><figure class="align-center" id="id7">
+<img alt="Add Node to DAG Graph" src="_images/AddNode.png" style="height: 300px;" />
+<figcaption>
+<p><span class="caption-text"><em>Add Node to DAG Graph</em></span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+<p>By clicking <span class="guilabel">OK</span> button, a new node will be added to the graph without any connection to the existing nodes.</p>
+<blockquote>
+<div><figure class="align-center" id="id8">
+<img alt="Add Node to DAG Graph" src="_images/AddNode.gif" />
+<figcaption>
+<p><span class="caption-text"><em>Add Node to DAG Graph</em></span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+<p>After clicking on the target node and it is highlighted in blue, the selected node can be removed by clicking <span class="guilabel">-</span>.</p>
+<blockquote>
+<div><figure class="align-center" id="id9">
+<img alt="Remove Node from DAG Graph" src="_images/RemoveNode.gif" />
+<figcaption>
+<p><span class="caption-text"><em>Remove Node from DAG Graph</em></span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+</section>
+<section id="create-remove-connection-between-nodes">
+<h4>Create/Remove Connection Between Nodes<a class="headerlink" href="#create-remove-connection-between-nodes" title="Permalink to this headline"></a></h4>
+<p>There is no connection from or to the new node that is added to the graph. To create a connection to other node in the graph:</p>
+<blockquote>
+<div><blockquote>
+<div><ol class="arabic simple">
+<li><p>Single-click on the starting node to highlight it.</p></li>
+<li><p>Double-click on the destination nodes, note that an arrow appears between the starting node to destination node, which means the connection is established.</p></li>
+</ol>
+</div></blockquote>
+<figure class="align-center" id="id10">
+<img alt="Establish a New Connection Between Nodes" src="_images/EstablishConnection.gif" />
+<figcaption>
+<p><span class="caption-text"><em>Establish a New Connection Between Nodes</em></span><a class="headerlink" href="#id10" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+<p>To remove am existing connection,</p>
+<blockquote>
+<div><blockquote>
+<div><ol class="arabic simple">
+<li><p>Single-click on the connection line to highlight the connection.</p></li>
+<li><p>Click on <span class="guilabel">-</span>, same as one that removes node, on top of the DAG graph area to remove the connection.</p></li>
+<li><p>In the prompt window, click <span class="guilabel">OK</span> to confirm the action. Notice that the connection between two nodes is removed.</p></li>
+</ol>
+</div></blockquote>
+<figure class="align-center" id="id11">
+<img alt="Remove an Existing Between Nodes" src="_images/RemoveConnection.gif" />
+<figcaption>
+<p><span class="caption-text"><em>Remove an Existing Between Nodes</em></span><a class="headerlink" href="#id11" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+</section>
+</section>
+</section>
+<section id="json-detail-for-selected-item">
+<h2>JSON Detail for Selected Item<a class="headerlink" href="#json-detail-for-selected-item" title="Permalink to this headline"></a></h2>
+<p>This panel provides detailed description for selected item in JSON format.</p>
+<p>Users can:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Navigate and expand the JSON file to see more details;</p></li>
+<li><p>Use copy to clipboard function to copy the whole or part of the JSON snippet out.</p></li>
+</ol>
+</div></blockquote>
+</section>
+<section id="advanced-configuration-for-selected-item">
+<h2>Advanced Configuration for Selected Item<a class="headerlink" href="#advanced-configuration-for-selected-item" title="Permalink to this headline"></a></h2>
+<p>Users can view adavanced configuration for the selected items if it is available.</p>
+</section>
+<section id="add-or-remove-items-in-graph">
+<h2>Add or Remove Items in Graph<a class="headerlink" href="#add-or-remove-items-in-graph" title="Permalink to this headline"></a></h2>
+<p>After clicking <img alt="Edit" src="_images/Edit.png" style="height: 21px;" /> button on the top-right corner of the application to activate the editing mode</p>
+</section>
+<section id="actions-edit-save-lock-copy-and-cancel-edit">
+<h2>Actions: Edit, Save, Lock, Copy and Cancel Edit<a class="headerlink" href="#actions-edit-save-lock-copy-and-cancel-edit" title="Permalink to this headline"></a></h2>
+<p>After users open an item from the list panel, the following tools are activated for users to modify the selected item.</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p><strong>Edit</strong>: By clicking on the <img alt="Edit" src="_images/Edit.png" style="height: 21px;" /> button, the editing mode is activated and users can edit the links/nodes in the DAG graph. Users can also cancel current editings by clicking on <img alt="CancelEdit" src="_images/CancelEdit.png" style="height: 21px;" /> button.</p></li>
+<li><p><strong>Save</strong>: By clicking on the <img alt="Save" src="_images/Save.png" style="height: 21px;" /> button, all edits will be saved to the selected item that the user is currently working on.</p></li>
+<li><p><strong>Lock</strong>: By clicking on the <img alt="Lock" src="_images/Lock.png" style="height: 21px;" /> button, users can lock current item and the current item cannot be edited unless it is unlocked by clicking <img alt="Unlock" src="_images/Unlock.png" style="height: 21px;" /> button.</p></li>
+<li><p><strong>Copy</strong>: By clicking on the <img alt="Copy" src="_images/Copy.png" style="height: 21px;" /> button, the currently selected item will be duplicated. By default, the duplicated item will have “_cp” in its name.</p>
+<blockquote>
+<div><figure class="align-center">
+<img alt="Copy Item" src="_images/CopyItems.gif" />
+</figure>
+</div></blockquote>
+</li>
+<li><p><strong>Full-screen</strong>: By clicking on the <img alt="FullScreen" src="_images/FullScreen.png" style="height: 21px;" /> button, the DAG graph, JSON details and advanced configuration panels will enter full screen mode. Users can exit full-screen mode by clicking <img alt="ExitFullScreen" src="_images/ExitFullScreen.png" style="height: 21px;" />.</p></li>
+</ol>
+</div></blockquote>
+</section>
+<section id="current-breadcrumb-navigation">
+<h2>Current Breadcrumb Navigation<a class="headerlink" href="#current-breadcrumb-navigation" title="Permalink to this headline"></a></h2>
+<p>The breadcrumb navigation section indicates the hierarchy among gallery, workflow/space and worker. Users can navigate from gallery to worker or view any items in the hierarchy by clicking on the titles.</p>
+<figure class="align-center">
+<img alt="Copy Item" src="_images/BreadcrumbNavigation.gif" />
+</figure>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Ecopia Tech Corporation.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>  
+
+  <style>
+    /* Sidebar header (and topbar for mobile) */
+    .wy-side-nav-search, .wy-nav-top {
+      background: #041527;
+    }
+    /* Sidebar */
+    .wy-nav-side {
+      background: #4e4e4f;
+    }
+  </style>
+
+
+</body>
+</html>
