@@ -21,7 +21,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="5. Training" href="Training.html" /> 
+    <link rel="prev" title="6. Training" href="Training.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -46,14 +46,20 @@
               <p class="caption" role="heading"><span class="caption-text">Components</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="OrderList.html">1. Order List</a></li>
-<li class="toctree-l1"><a class="reference internal" href="AnnotationStage.html">2. Annotation Stage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="QC.html">3. QC</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Annotator.html">4. Annotator</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Training.html">5. Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ProjectProgress.html">2. Project Progress</a></li>
+<li class="toctree-l1"><a class="reference internal" href="AnnotationStage.html">3. Annotation Stage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="QC.html">4. QC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Annotator.html">5. Annotator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Training.html">6. Training</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Other Functions</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">1. Quotation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. Quotation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#quotation-table">1.1. Quotation Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-new-quote">1.2. Create New Quote</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#obtain-quotes">1.3. Obtain Quotes</a></li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -81,13 +87,85 @@
              
   <section id="quotation">
 <h1><span class="section-number">1. </span>Quotation<a class="headerlink" href="#quotation" title="Permalink to this headline"></a></h1>
+<p>The <span class="guilabel">Quotation</span> function of the mapping entry contains an estimatation tool that allow users to quickly obatin information about the size of the area of interest (AOI) and number of buildings inside of this AOI.</p>
+<figure class="align-center" id="id1">
+<img alt="The Quotation Tab" src="_images/quotation_tab.png" />
+<figcaption>
+<p><span class="caption-text"><em>The Quotation Function</em></span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<section id="quotation-table">
+<h2><span class="section-number">1.1. </span>Quotation Table<a class="headerlink" href="#quotation-table" title="Permalink to this headline"></a></h2>
+<dl class="simple">
+<dt>The following fields are included in the Quotation Table:</dt><dd><ol class="arabic simple">
+<li><p><strong>Package ID</strong>: unique identifier for the quotes;</p></li>
+<li><p><strong>File ID</strong>: unique identifier for the AOI files;</p></li>
+<li><p><strong>Location</strong>: AOI file location; users can directly download previously uploaded AOI files from the table;</p></li>
+<li><p><strong>Submitted User</strong>: usernames of the users who uploaded the file;</p></li>
+<li><p><strong>Job Status</strong>: indicator for status of quotation generation;</p></li>
+<li><p><strong>Area (km2)</strong>: size of the AOI in km2;</p></li>
+<li><p><strong>Buildings</strong>: number of buildings inside of the AOI;</p></li>
+<li><p><strong>Group Column</strong>: the field to group polygons in the AOI file. <strong>Null</strong> by default;</p></li>
+<li><p><strong>Area Column</strong>: the field that indicates the size of the plygons in AOI file. <strong>Null</strong> by default;</p></li>
+<li><p><strong>Created</strong>: creation time of the quotes</p></li>
+</ol>
+</dd>
+<dt>On the right hand side there are two functions that are available to the users:</dt><dd><ol class="arabic simple">
+<li><p>View Report <img alt="viewreportbutton" src="_images/viewreportbutton.png" style="height: 30px;" />: by clicking <img alt="viewreportbutton" src="_images/viewreportbutton.png" style="height: 30px;" />, a detailed quote report will be generated based on the selected AOI.</p></li>
+<li><p>Detele AOI <img alt="deleteaoibutton" src="_images/detelebutton.png" style="height: 30px;" />: by clicking <img alt="deleteaoibutton" src="_images/detelebutton.png" style="height: 30px;" />, the AOI and its corresponding quote entry will be removed from the quotation table.</p></li>
+</ol>
+</dd>
+</dl>
+</section>
+<section id="create-new-quote">
+<h2><span class="section-number">1.2. </span>Create New Quote<a class="headerlink" href="#create-new-quote" title="Permalink to this headline"></a></h2>
+<p>New quotes can be created by clicking <span class="guilabel">+ New Quote</span> on the top right of the quotation table, a window will pop-up for users to upload the AOI file.</p>
+<figure class="align-center" id="id2">
+<img alt="Upload Quotation File" src="_images/Upload_Quotation_File.png" style="height: 360px;" />
+<figcaption>
+<p><span class="caption-text"><em>Upload Quotation File</em></span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>In the <strong>Select AOI File</strong> area, click in the empty space to navigate to the location of zipped AOI shapefile on local machine or drag the zipped shapefile into the empty area.
+Once the file is listed below, click on <span class="guilabel">Start Upload</span> to upload the zipped AOI file to the quotation tool.</p>
+<figure class="align-center" id="id3">
+<img alt="Uploaded AOI" src="_images/Uploaded_AOI.png" style="height: 360px;" />
+<figcaption>
+<p><span class="caption-text"><em>Zipped AOI file uploaded to the quotation tool</em></span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Once the upload is completed, users can click <span class="guilabel">Submit</span> to trigger the estimation process.</p>
+</section>
+<section id="obtain-quotes">
+<h2><span class="section-number">1.3. </span>Obtain Quotes<a class="headerlink" href="#obtain-quotes" title="Permalink to this headline"></a></h2>
+<p>After clicking <span class="guilabel">Submit</span>, the interface will return to the quotation table. The newest quote will be listed at the top of the table.
+There are four different statuses for each quotation job:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p><strong>Pending</strong>: the quotation job is still running for the quote and the number of buildings in the AOI is still being generated;</p></li>
+<li><p><strong>Finished</strong>: the quotation job is finished. Users can obtain area and building count information from the table or quotation report <img alt="viewreportbutton" src="_images/viewreportbutton.png" style="height: 30px;" />;</p></li>
+<li><p><strong>Error</strong>: the quotation job is failed. Users need to check the AOI file and re-run the quotation job;</p></li>
+<li><p><strong>Invalid</strong>: the AOI file is invalid. Users need to check the validity of the AOI file, fix the AOI shapefile and re-run the quotation tool again.</p></li>
+</ol>
+</div></blockquote>
+<p>The initial status of a new quote is <strong>Pending</strong> as the building count is being generated. Once the status turns to <strong>Finished</strong>, users can obtain the quote by using the quotation table or view quotation report <img alt="viewreportbutton" src="_images/viewreportbutton.png" style="height: 30px;" />.</p>
+<figure class="align-center" id="id4">
+<img alt="The Quotation Report" src="_images/QuotationReport.png" style="height: 360px;" />
+<figcaption>
+<p><span class="caption-text"><em>The Quotation Report</em></span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Training.html" class="btn btn-neutral float-left" title="5. Training" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Training.html" class="btn btn-neutral float-left" title="6. Training" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
