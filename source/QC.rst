@@ -61,8 +61,8 @@ QC project admin can follow the steps below to manage participants in the QC rev
 
    *Example of Member Management Tool*
 
-Action Functions: Settings
-***************************
+.. Action Functions: Settings
+.. ***************************
 
 Action Functions: Open Project |openqcprojectbutton|
 *******************************************************
