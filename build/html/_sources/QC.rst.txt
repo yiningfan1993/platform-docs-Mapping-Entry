@@ -2,7 +2,7 @@
 QC
 **********************
 
-The QC tab contains a collection of tools to support the quality control (QC) process of one or more vector layers. Users with permission can set up QC Projects so that layers can be reviewed by participating users using the QC tools that are provided.
+The QC tab contains a collection of tools to support the quality control (QC) process of one or more vector layers. Delivered vector results will be set up automatically as QC review project under QC tab. Users with permission can participate the QC review projects simultaneously to examine the vector results.
 
 QC Tab Interface
 ********************
