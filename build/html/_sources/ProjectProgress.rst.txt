@@ -1,3 +1,59 @@
 **********************
 Project Progress
 **********************
+
+Project process allows users to customize the model settings, track project progress and manage annotation progress for the projects that require both modeling and annotation within users’ organization. 
+
+ .. figure:: /images/ProjectProgress/ProjectProgress.png
+    :align: center
+    :alt: ProjectProgress
+
+    *General Interface of Project Progress*
+
+
+Create Project
+****************
+
+Users can click on :kbd:`Create Project` button located on the top right of the project list to create a new annotation project.
+
+Once entered, users have to associate the project with an order ID and provide a project name. Click on :kbd:`Submit` to complete the process.
+
+ .. figure:: /images/ProjectProgress/CreateProject.png
+    :align: center
+    :alt: CreateProject
+
+    *Create Project*
+
+Project List
+***************
+
+Newly created and ongoing projects will be listed in the table below. Users can obtain basic information about the project from the project list.
+
+Field 
+================
+
+The following fields are provided in the project list table:
+
+    * Name: name of the project, provided when the project was created
+    * Order ID: assoicated order ID, which is associated with orders in the order list
+    * AOI ID: AOI ID that is associated with the order
+    * Image Source: the provider of the imagery datasets
+    * Area (KM2): size of the AOI in km2
+    * Building Num: Estimated number of buildings inside of the AOI
+    * Owner: owner/creator of the annotation project
+    * Created: time stamp when the order was created
+    * Action: two actions that can be applied to :ref:`ProjectProgress:Action: View Detail` and :ref:`ProjectProgress:Action: Delete`.
+
+
+
+Expanded Details
+=================
+
+Action: View Detail
+=====================
+
+Action: Delete
+=====================
+
+Stage Monitor
+====================
