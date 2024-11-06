@@ -21,6 +21,7 @@ The mapping entry provides a space where users can submit extraction order, assm
    AnnotationStage
    QC
    Annotator
+   UserProfile
    Training
 
 .. toctree::
