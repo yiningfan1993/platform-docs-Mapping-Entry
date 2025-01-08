@@ -118,6 +118,12 @@ If the provided imagery failed to cover the entire provided AOI, the following n
 
     *Coverage Check Notification*
 
+The following actions are available to the users:
+
+#. Users can click on **Coverage Check Report** to review the actual coverage and download shapefile for the missing coverage area;
+#. After the users adjusted the content in the S3 path to provide more coverage, they can choose to :guilabel:`Validate Again`` to see if the adjusted content fully covers the AOI;
+#. Users can also choose to :guilabel:`Ignore Missing Area` if the missing area is not crucial to the project. 
+
 
 Extraction Settings
 ====================
@@ -234,9 +240,15 @@ Action: Delete Order |DeleteAOI|
 Users can delete an order by clicking on the |DeleteAOI| button in the action column.
 
 
-Delivery |Delivery|
-********************
+Action: Delivery |Delivery|
+*********************************
 Email notification will be sent to order owner once the vector result is delivered. By clicking on the |Delivery| button, users can view the deliveries and their path on the platform. To download the vector results
+
+
+Action: Feedback |Feedback|
+*********************************
+Users can provide feedback to the current order based on the quality and timing of the delivery.
+
 
 
 .. |CreateOrder| image:: /images/CreateOrder.png
@@ -270,4 +282,7 @@ Email notification will be sent to order owner once the vector result is deliver
       :height: 30
 
 .. |Edit| image:: /images/Edit.png
+      :height: 30
+
+.. |Feedback| image:: /images/Feedback.png
       :height: 30

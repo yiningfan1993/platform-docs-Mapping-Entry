@@ -118,11 +118,24 @@ If the provided imagery failed to cover the entire provided AOI, the following n
 
     *Coverage Check Notification*
 
+The following actions are available to the users:
+
+#. Users can click on **Coverage Check Report** to review the actual coverage and download shapefile for the missing coverage area;
+#. After the users adjusted the content in the S3 path to provide more coverage, they can choose to :guilabel:`Validate Again`` to see if the adjusted content fully covers the AOI;
+#. Users can also choose to :guilabel:`Ignore Missing Area` if the missing area is not crucial to the project. 
+
 
 Extraction Settings
 ====================
 
 This space allows users to select desired features (Catetitle) to be extracted from the provided imagery.
+
+ .. figure:: /images/ExtractionSettings.png
+    :align: center
+    :alt: ExtractionSettings
+    
+
+    *Extraction Settings*
 
 #. A list of standard product packages are listed on top of the catetitles. Users can select one or multiple and corresponding catetiles will be automatically selected in the catetitle list below.
 #. Select Catetitle: by clicking on the checkbox next to each Catetitle
@@ -163,12 +176,7 @@ This space allows users to select desired features (Catetitle) to be extracted f
 #. To help Ecopia team better understand the extraction requirements, users can attach supporting document in the **Attached Document for Extraction Request** section.
 #. Click on "Save & Continue" to apply the changes and continue to Area of Interest.
 
- .. figure:: /images/ExtractionSettings.png
-    :align: center
-    :alt: ExtractionSettings
-    
 
-    *Extraction Settings*
 
 
 
