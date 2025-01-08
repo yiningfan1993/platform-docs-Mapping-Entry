@@ -2,7 +2,7 @@
 Order List
 **********************
 
-Through partner order, users can create and place mapping project orders based on their own requirements. Different features can be extracted from the provided imagery. In addition, users can determine if the order processing is fully automated or requires human annotation at certain stages.
+Order list is a centralized space for users to create order, manage order, monitor order status and review deliverables. 
 
  .. figure:: /images/OrderListInterface.png
     :align: center
@@ -27,7 +27,7 @@ Click on "Submit" after setting the order name, the order list page will jump to
 Action: Settings |ViewDetails|
 *************************************
 
-Users can view and edit details of the order by clicking on |ViewDetails| button in the action column. The page will jump to basic settings of the order by default. 
+Users can view and edit details of the order by clicking on |ViewDetails| button in the action column. The order list page will jump to basic settings once a new order is created for users to provide more information about the order.
 
 Input Data
 ===============
@@ -37,7 +37,9 @@ This page contains setting information for order's AOI and corresponding imagery
 Order's AOI Data
 ------------------
 
-By clicking on the space on the top right corner, users can upload the AOI file from local machine. Once uploaded, the AOI will be listed under **Order's AOI Data** section of the page.
+By clicking :guilabel:`Add AOI` button on the top right corner, users can upload the AOI file from local machine or through S3 buckets. Once uploaded, the AOI will be listed under **AOI Data** section of the page.
+
+
 
 .. note::
       The AOI file needs to be in zipped shapefile format and smaller than 4 MB.
@@ -46,7 +48,7 @@ By clicking on the space on the top right corner, users can upload the AOI file 
 AOI Actions
 --------------------
 
-Once the AOI and imagery data has been added to the order. The following actions needs to be completed before proceeding with the order.
+The following actions is available for uploaded AOI files.
 
 
 Preview AOI |PreviewAOI|
@@ -208,13 +210,13 @@ The following information will be provided:
 
 Place Order
 ----------------------------
-Once the quote is calculated, users can place order by clicking on the :guilabel:`Place Order`. 
+Once the quote is calculated, users can place order by clicking on the :guilabel:`Place Order`. After the order is placed, the production team will receive notification and the production process will be triggered.
 
-.. figure:: /images/PayNow.png
+.. figure:: /images/PlaceOrder.png
     :alt: PayNow
     :align: center
 
-    *Payment is Ready to be Made*
+    *Order is ready to be placed*
 
 
 Action: Delete Order |DeleteAOI|
