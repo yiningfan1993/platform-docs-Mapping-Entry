@@ -50,14 +50,17 @@
 <li class="toctree-l2"><a class="reference internal" href="#create-order">1.1. Create Order</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#action-settings-viewdetails">1.2. Action: Settings </a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#input-data">1.2.1. Input Data</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#order-s-aoi-data">1.2.1.1. Order’s AOI Data</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#aoi-actions">1.2.1.2. AOI Actions</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="#preview-aoi-previewaoi">1.2.1.2.1. Preview AOI </a></li>
-<li class="toctree-l5"><a class="reference internal" href="#remove-aoi-deleteaoi">1.2.1.2.2. Remove AOI </a></li>
+<li class="toctree-l4"><a class="reference internal" href="#order-s-aoi-data">1.2.1.1. Order’s AOI Data</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#add-aoi-data">1.2.1.1.1. Add AOI Data</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#aoi-actions">1.2.1.1.2. AOI Actions</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="#imagery-timeline">1.2.1.3. Imagery Timeline</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#order-s-imagery-data">1.2.1.4. Order’s Imagery Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#order-s-imagery-data">1.2.1.2. Order’s Imagery Data</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#add-imagery">1.2.1.2.1. Add Imagery</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#imagery-data-action">1.2.1.2.2. Imagery Data Action</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#coverage-check">1.2.1.3. Coverage Check</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#extraction-settings">1.2.2. Extraction Settings</a></li>
@@ -132,89 +135,100 @@
 <p>This page contains setting information for order’s AOI and corresponding imagery data that will be used for production.</p>
 <section id="order-s-aoi-data">
 <h4><span class="section-number">1.2.1.1. </span>Order’s AOI Data<a class="headerlink" href="#order-s-aoi-data" title="Permalink to this headline"></a></h4>
-<p>By clicking on the space on the top right corner, users can upload the AOI file from local machine. Once uploaded, the AOI will be listed under <strong>Order’s AOI Data</strong> section of the page.</p>
+<section id="add-aoi-data">
+<h5><span class="section-number">1.2.1.1.1. </span>Add AOI Data<a class="headerlink" href="#add-aoi-data" title="Permalink to this headline"></a></h5>
+<p>By clicking <span class="guilabel">Add AOI</span> button on the top right corner, users can upload the AOI file from local machine or through S3 buckets. Once uploaded, the AOI will be listed under <strong>AOI Data</strong> section of the page.</p>
+<blockquote>
+<div><figure class="align-center" id="id2">
+<img alt="AddAOILocalDrive" src="_images/AddAOILocalDrive.png" />
+<figcaption>
+<p><span class="caption-text"><em>Add AOI via Local Drive</em></span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id3">
+<img alt="AddAOIS3" src="_images/AddAOIS3.png" />
+<figcaption>
+<p><span class="caption-text"><em>Add AOI via S3</em></span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The AOI file needs to be in zipped shapefile format and smaller than 4 MB.</p>
 </div>
 </section>
 <section id="aoi-actions">
-<h4><span class="section-number">1.2.1.2. </span>AOI Actions<a class="headerlink" href="#aoi-actions" title="Permalink to this headline"></a></h4>
-<p>Once the AOI and imagery data has been added to the order. The following actions needs to be completed before proceeding with the order.</p>
-<section id="preview-aoi-previewaoi">
-<h5><span class="section-number">1.2.1.2.1. </span>Preview AOI <img alt="PreviewAOI" src="_images/PreviewAOI.png" style="height: 25px;" /><a class="headerlink" href="#preview-aoi-previewaoi" title="Permalink to this headline"></a></h5>
-<p>By clicking <img alt="PreviewAOI" src="_images/PreviewAOI.png" style="height: 25px;" /> button, users can review the uploaded AOI file overlay with Google Maps.</p>
-<p>The <strong>AOI Status</strong> and <strong>Coverage</strong> column will change accordingly based on the coverage check status.</p>
-<table class="colwidths-given tight-table docutils align-default" id="id2">
-<caption><span class="caption-text">Coverage Check Status</span><a class="headerlink" href="#id2" title="Permalink to this table"></a></caption>
-<colgroup>
-<col style="width: 15%" />
-<col style="width: 15%" />
-<col style="width: 35%" />
-<col style="width: 35%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Coverage Check</p></th>
-<th class="head"><p>AOI Status</p></th>
-<th class="head"><p>Coverage</p></th>
-<th class="head"><p>Note</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Coverage check not started</p></td>
-<td><p>AOI Init</p></td>
-<td><p>Need to check</p></td>
-<td><p>Click <img alt="checkcoverage" src="_images/checkcoverage.png" style="height: 21px;" /> button to start coverage check, or choose manual confirm</p></td>
-</tr>
-<tr class="row-odd"><td><p>Coverage check passed</p></td>
-<td><p>Coverage Checked</p></td>
-<td><p><img alt="Passed" src="_images/GreenCheck.png" style="height: 20px;" />: Coverage check has passed</p></td>
-<td><p>automatically switch to <strong>Coverage Checked</strong> Status</p></td>
-</tr>
-<tr class="row-even"><td><p>Coverage check failed</p></td>
-<td><p>AOI Init</p></td>
-<td><dl class="simple">
-<dt>Options:</dt><dd><ul class="simple">
-<li><p><img alt="ViewCoverageReport" src="_images/ViewCoverageReport.png" style="height: 25px;" />: Visualize AOI and missing area</p></li>
-<li><p><img alt="ManualConfirm" src="_images/ManualConfirm.png" style="height: 20px;" />: Ignore missing area and proceed with current coverage</p></li>
-</ul>
-</dd>
-</dl>
-</td>
-<td><p>Email notification will be sent to order owner</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="remove-aoi-deleteaoi">
-<h5><span class="section-number">1.2.1.2.2. </span>Remove AOI <img alt="DeleteAOI" src="_images/DeleteAOI.png" style="height: 32px;" /><a class="headerlink" href="#remove-aoi-deleteaoi" title="Permalink to this headline"></a></h5>
-<p>AOI will be removed once click on the <img alt="DeleteAOI" src="_images/DeleteAOI.png" style="height: 32px;" /> button.</p>
-</section>
-</section>
-<section id="imagery-timeline">
-<h4><span class="section-number">1.2.1.3. </span>Imagery Timeline<a class="headerlink" href="#imagery-timeline" title="Permalink to this headline"></a></h4>
+<h5><span class="section-number">1.2.1.1.2. </span>AOI Actions<a class="headerlink" href="#aoi-actions" title="Permalink to this headline"></a></h5>
+<p>The following actions are available for uploaded AOI files.</p>
 <blockquote>
-<div><p>In order to have the system generate the most accurate estimate delivery time, users are required to provide <strong>Expect Image Arrivel</strong> time and confirm when the imagery actually arrives.</p>
+<div><ol class="arabic simple">
+<li><p>Preview AOI <img alt="PreviewAOI" src="_images/PreviewAOI.png" style="height: 25px;" />: By clicking <img alt="PreviewAOI" src="_images/PreviewAOI.png" style="height: 25px;" /> button, users can review the uploaded AOI file overlay with Google Maps.</p></li>
+<li><p>Remove AOI <img alt="DeleteAOI" src="_images/DeleteAOI.png" style="height: 32px;" />: AOI will be removed once click on the <img alt="DeleteAOI" src="_images/DeleteAOI.png" style="height: 32px;" /> button.</p></li>
+</ol>
 </div></blockquote>
+</section>
 </section>
 <section id="order-s-imagery-data">
-<h4><span class="section-number">1.2.1.4. </span>Order’s Imagery Data<a class="headerlink" href="#order-s-imagery-data" title="Permalink to this headline"></a></h4>
-<p>Imagery datasets that will be used for this order will be listed in this section. By clicking on the “Add Imagery” button in the <strong>Order’s Imagery Data</strong> section, users can add imagery data to the order by providing the following information:</p>
+<h4><span class="section-number">1.2.1.2. </span>Order’s Imagery Data<a class="headerlink" href="#order-s-imagery-data" title="Permalink to this headline"></a></h4>
+<section id="add-imagery">
+<h5><span class="section-number">1.2.1.2.1. </span>Add Imagery<a class="headerlink" href="#add-imagery" title="Permalink to this headline"></a></h5>
+<p>Imagery datasets that will be used for this order are listed in this section. By clicking on the <span class="guilabel">Add Imagery</span> button in the <strong>Imagery Data</strong> section, users can add imagery data to the order by providing the following information:</p>
+<blockquote>
+<div><ul>
+<li><p>Imagery Type:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>Name: name of the imagery data</p></li>
-<li><p>Category: 2D or 3D imagery data</p></li>
-<li><p>Imagery Type: Satellite or Aerial</p></li>
-<li><p>Image Path: Ecopia provides different types of data transfer protocol. Users can select the one that best filt their needs from the protocol dropdown list.</p></li>
+<li><p>Single View: single view imagery for 2D feature extraction</p></li>
+<li><p>Multi View: multi-view imagery for 3D production</p></li>
 </ul>
 </div></blockquote>
-<figure class="align-center" id="id3">
+</li>
+<li><p>Location:</p>
+<blockquote>
+<div><ul>
+<li><p>Local Drive: upload by drag-and-drop or navigate to the location of the file on local machine</p></li>
+<li><p>Cloud Service: S3 bucket that store the imagery data or through partnered imagery provider</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Own S3: customers own S3 path with corresponding access key and secret access key</p></li>
+<li><p>Ecopia S3: system generated Ecopia S3 bucket paired with access key and secret access key for users to upload imagery datasets to designated S3 buckets</p></li>
+<li><p>Imagery Provider: download imagery through imagery provider by providing resolution (mandatory) and vintage (not mandatory).</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<figure class="align-center" id="id4">
 <img alt="AddStandardImagery" src="_images/AddStandardImagery.png" />
 <figcaption>
-<p><span class="caption-text"><em>Add Standard Imagery</em></span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Add Standard Imagery</em></span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<p>After the information is provided, click on “Submit”. In the following window, bind the imagery data with AOI that will be used for feature extraction and click on “Confirm” to complete the imagery adding process.</p>
+<p>After the information is provided, click on <span class="guilabel">Submit</span>. The newly create imagery dataset will be listed in <strong>Imagery Data</strong> section. In the meantime, system will process the imagery automatically and run coverage check against the AOI.</p>
+</section>
+<section id="imagery-data-action">
+<h5><span class="section-number">1.2.1.2.2. </span>Imagery Data Action<a class="headerlink" href="#imagery-data-action" title="Permalink to this headline"></a></h5>
+<p>The following actions are available for uploaded imagery datasets:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Edit Imagery <img alt="Edit" src="_images/Edit.png" style="height: 30px;" />: users can edit imagery datasets by adjusting the location information;</p></li>
+<li><p>Delete Imagery <img alt="DeleteAOI" src="_images/DeleteAOI.png" style="height: 32px;" />: users can remove the uploaded imagery dataset by clicking on this button.</p></li>
+</ol>
+</div></blockquote>
+</section>
+</section>
+<section id="coverage-check">
+<h4><span class="section-number">1.2.1.3. </span>Coverage Check<a class="headerlink" href="#coverage-check" title="Permalink to this headline"></a></h4>
+<p>If the provided imagery failed to cover the entire provided AOI, the following notification will appear in the input data section.</p>
+<figure class="align-center" id="id5">
+<img alt="CoverageCheck" src="_images/CoverageCheck.png" />
+<figcaption>
+<p><span class="caption-text"><em>Coverage Check Notification</em></span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
 </section>
 </section>
 <section id="extraction-settings">
@@ -224,12 +238,19 @@
 <li><p>A list of standard product packages are listed on top of the catetitles. Users can select one or multiple and corresponding catetiles will be automatically selected in the catetitle list below.</p></li>
 <li><p>Select Catetitle: by clicking on the checkbox next to each Catetitle</p>
 <blockquote>
-<div><ul class="simple">
-<li><dl class="simple">
+<div><ul>
+<li><dl>
 <dt>Catetitles are categorized into 3 different Categories:</dt><dd><ul>
 <li><p><strong>Raster</strong>: include DSM and orthomosaic data generated through production pipeline</p></li>
 <li><p><strong>2D Landcover</strong>: includes building, road, manmade and natural landcover features; height attribute can be selected to construct 3D landcover data</p></li>
-<li><p><strong>Advanced Transportation</strong>: includes different types of transportation related centerlines, road marking, signs and other transportation features that can be used for guiding and navigation</p></li>
+<li><p><strong>Advanced Transportation</strong>: includes different types of transportation related centerlines, polygons, points and other transportation features that can be used for guiding and navigation</p></li>
+<li><p><strong>Non-Standard</strong>: features that are not derived through modeling. Features have neem categorized into centerlines, road lines, polygons, and signs.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>users can also define new categories by clicking on <span class="guilabel">+ Add Category</span> button. In the pop-up window, category name, geometry tyoe, definition, image example, and annotate rules are required to create this new category.</p></li>
+</ul>
+</div></blockquote>
+</li>
 </ul>
 </dd>
 </dl>
@@ -240,10 +261,10 @@
 </li>
 <li><p>Users can select the category in general or select second-tier categories to further differentiate the features</p>
 <blockquote>
-<div><figure class="align-center" id="id4">
+<div><figure class="align-center" id="id6">
 <img alt="Second-Tier Categories" src="_images/SecondTier.png" />
 <figcaption>
-<p><span class="caption-text"><em>Example of Second-Tier Category</em></span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Example of Second-Tier Category</em></span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </div></blockquote>
@@ -268,10 +289,10 @@
 <li><p>Click on “Save &amp; Continue” to apply the changes and continue to Area of Interest.</p></li>
 </ol>
 <blockquote>
-<div><figure class="align-center" id="id5">
+<div><figure class="align-center" id="id7">
 <img alt="ExtractionSettings" src="_images/ExtractionSettings.png" />
 <figcaption>
-<p><span class="caption-text"><em>Extraction Settings</em></span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Extraction Settings</em></span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </div></blockquote>
@@ -301,10 +322,10 @@
 <section id="quote">
 <h4><span class="section-number">1.2.4.1. </span>Quote<a class="headerlink" href="#quote" title="Permalink to this headline"></a></h4>
 <p>User can obtain quote information by clicking on the <span class="guilabel">Quote</span> button. At this stage, the system is calculating the quote for the order based on the extraction settings and size of the AOI. The process will normally take a few minutes to complete.</p>
-<figure class="align-center" id="id6">
+<figure class="align-center" id="id8">
 <img alt="Calculating Quote" src="_images/CalculatingQuote.png" />
 <figcaption>
-<p><span class="caption-text"><em>Quote is being Calculated</em></span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Quote is being Calculated</em></span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>The following information will be provided:</p>
@@ -327,10 +348,10 @@
 <section id="place-order">
 <h4><span class="section-number">1.2.4.2. </span>Place Order<a class="headerlink" href="#place-order" title="Permalink to this headline"></a></h4>
 <p>Once the quote is calculated, users can place order by clicking on the <span class="guilabel">Place Order</span>. After the order is placed, the production team will receive notification and the production process will be triggered.</p>
-<figure class="align-center" id="id7">
+<figure class="align-center" id="id9">
 <img alt="PayNow" src="_images/PlaceOrder.png" />
 <figcaption>
-<p><span class="caption-text"><em>Order is ready to be placed</em></span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Order is ready to be placed</em></span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>

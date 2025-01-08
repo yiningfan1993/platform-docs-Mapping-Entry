@@ -37,72 +37,59 @@ This page contains setting information for order's AOI and corresponding imagery
 Order's AOI Data
 ------------------
 
+Add AOI Data
+++++++++++++++
+
 By clicking :guilabel:`Add AOI` button on the top right corner, users can upload the AOI file from local machine or through S3 buckets. Once uploaded, the AOI will be listed under **AOI Data** section of the page.
 
+ .. figure:: /images/AddAOILocalDrive.png
+    :align: center
+    :alt: AddAOILocalDrive
 
+    *Add AOI via Local Drive*
+
+ .. figure:: /images/AddAOIS3.png
+    :align: center
+    :alt: AddAOIS3
+
+    *Add AOI via S3*
 
 .. note::
       The AOI file needs to be in zipped shapefile format and smaller than 4 MB.
 
 
 AOI Actions
---------------------
+++++++++++++++
 
-The following actions is available for uploaded AOI files.
-
-
-Preview AOI |PreviewAOI|
-+++++++++++++++++++++++++++++
-
-By clicking |PreviewAOI| button, users can review the uploaded AOI file overlay with Google Maps.
+The following actions are available for uploaded AOI files.
 
 
-The **AOI Status** and **Coverage** column will change accordingly based on the coverage check status.
-
-.. list-table:: Coverage Check Status
-   :widths: 30 30 70 70
-   :header-rows: 1
-   :class: tight-table
-
-   * - Coverage Check
-     - AOI Status
-     - Coverage
-     - Note
-   * - Coverage check not started
-     - AOI Init
-     - Need to check
-     - Click |CheckCoverage| button to start coverage check, or choose manual confirm
-   * - Coverage check passed
-     - Coverage Checked
-     - |Passed|: Coverage check has passed
-     - automatically switch to **Coverage Checked** Status
-   * - Coverage check failed
-     - AOI Init
-     - Options:
-        * |ViewCoverageReport|: Visualize AOI and missing area
-        * |ManualConfirm|: Ignore missing area and proceed with current coverage
-     - Email notification will be sent to order owner
-
-Remove AOI |DeleteAOI|
-++++++++++++++++++++++++++
-
-AOI will be removed once click on the |DeleteAOI| button.
-
-Imagery Timeline
----------------------------
-
- In order to have the system generate the most accurate estimate delivery time, users are required to provide **Expect Image Arrivel** time and confirm when the imagery actually arrives.
+    #. Preview AOI |PreviewAOI|: By clicking |PreviewAOI| button, users can review the uploaded AOI file overlay with Google Maps.
+    #. Remove AOI |DeleteAOI|: AOI will be removed once click on the |DeleteAOI| button.
 
 
 Order's Imagery Data
 ----------------------------
 
-Imagery datasets that will be used for this order will be listed in this section. By clicking on the "Add Imagery" button in the **Order's Imagery Data** section, users can add imagery data to the order by providing the following information:
+Add Imagery
+++++++++++++
 
-    * Name: name of the imagery data
-    * Category: 2D or 3D imagery data
-    * Imagery Type: Satellite or Aerial
-    * Image Path: Ecopia provides different types of data transfer protocol. Users can select the one that best filt their needs from the protocol dropdown list.
+Imagery datasets that will be used for this order are listed in this section. By clicking on the :guilabel:`Add Imagery` button in the **Imagery Data** section, users can add imagery data to the order by providing the following information:
+
+    * Imagery Type:
+
+        * Single View: single view imagery for 2D feature extraction
+        * Multi View: multi-view imagery for 3D production
+
+    * Location: 
+
+        * Local Drive: upload by drag-and-drop or navigate to the location of the file on local machine
+        * Cloud Service: S3 bucket that store the imagery data or through partnered imagery provider
+
+            * Own S3: customers own S3 path with corresponding access key and secret access key
+            * Ecopia S3: system generated Ecopia S3 bucket paired with access key and secret access key for users to upload imagery datasets to designated S3 buckets
+            * Imagery Provider: download imagery through imagery provider by providing resolution (mandatory) and vintage (not mandatory).
+    
 
 .. figure:: /images/AddStandardImagery.png
     :alt: AddStandardImagery
@@ -110,9 +97,28 @@ Imagery datasets that will be used for this order will be listed in this section
 
     *Add Standard Imagery*
 
-After the information is provided, click on "Submit". In the following window, bind the imagery data with AOI that will be used for feature extraction and click on "Confirm" to complete the imagery adding process.
+After the information is provided, click on :guilabel:`Submit`. The newly create imagery dataset will be listed in **Imagery Data** section. In the meantime, system will process the imagery automatically and run coverage check against the AOI. 
 
- 
+Imagery Data Action
++++++++++++++++++++++
+
+The following actions are available for uploaded imagery datasets:
+
+    #. Edit Imagery |Edit|: users can edit imagery datasets by adjusting the location information;
+    #. Delete Imagery |DeleteAOI|: users can remove the uploaded imagery dataset by clicking on this button.
+
+
+Coverage Check
+-----------------
+If the provided imagery failed to cover the entire provided AOI, the following notification will appear in the input data section. 
+
+.. figure:: /images/CoverageCheck.png
+    :alt: CoverageCheck
+    :align: center
+
+    *Coverage Check Notification*
+
+
 Extraction Settings
 ====================
 
@@ -124,7 +130,11 @@ This space allows users to select desired features (Catetitle) to be extracted f
     * Catetitles are categorized into 3 different Categories:
         * **Raster**: include DSM and orthomosaic data generated through production pipeline
         * **2D Landcover**: includes building, road, manmade and natural landcover features; height attribute can be selected to construct 3D landcover data
-        * **Advanced Transportation**: includes different types of transportation related centerlines, road marking, signs and other transportation features that can be used for guiding and navigation
+        * **Advanced Transportation**: includes different types of transportation related centerlines, polygons, points and other transportation features that can be used for guiding and navigation
+        * **Non-Standard**: features that are not derived through modeling. Features have neem categorized into centerlines, road lines, polygons, and signs.
+            
+            * users can also define new categories by clicking on :guilabel:`+ Add Category` button. In the pop-up window, category name, geometry tyoe, definition, image example, and annotate rules are required to create this new category.
+
     * For definition of each Catetitle, please refer to Glossary for more details.
 
 
@@ -224,9 +234,15 @@ Action: Delete Order |DeleteAOI|
 Users can delete an order by clicking on the |DeleteAOI| button in the action column.
 
 
-Delivery |Delivery|
-********************
+Action: Delivery |Delivery|
+*********************************
 Email notification will be sent to order owner once the vector result is delivered. By clicking on the |Delivery| button, users can view the deliveries and their path on the platform. To download the vector results
+
+
+Action: Feedback |Feedback|
+*********************************
+Users can provide feedback to the current order based on the quality and timing of the delivery.
+
 
 
 .. |CreateOrder| image:: /images/CreateOrder.png
@@ -257,4 +273,10 @@ Email notification will be sent to order owner once the vector result is deliver
       :height: 32
 
 .. |Delivery| image:: /images/Delivery.png
+      :height: 30
+
+.. |Edit| image:: /images/Edit.png
+      :height: 30
+
+.. |Feedback| image:: /images/Feedback.png
       :height: 30
