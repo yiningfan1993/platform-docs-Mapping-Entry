@@ -49,26 +49,22 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">1. Order List</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#create-order">1.1. Create Order</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#action-settings-viewdetails">1.2. Action: Settings </a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#basic-settings">1.2.1. Basic Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#input-data">1.2.1. Input Data</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#order-s-aoi-data">1.2.1.1. Order’s AOI Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#aoi-actions">1.2.1.2. AOI Actions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#preview-aoi-previewaoi">1.2.1.2.1. Preview AOI </a></li>
+<li class="toctree-l5"><a class="reference internal" href="#remove-aoi-deleteaoi">1.2.1.2.2. Remove AOI </a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#imagery-timeline">1.2.1.3. Imagery Timeline</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#order-s-imagery-data">1.2.1.4. Order’s Imagery Data</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#extraction-settings">1.2.2. Extraction Settings</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#area-of-interest">1.2.3. Area of Interest</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#order-s-aoi-data">1.2.3.1. Order’s AOI Data</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#aoi-actions">1.2.3.2. AOI Actions</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="#preview-aoi-previewaoi">1.2.3.2.1. Preview AOI </a></li>
-<li class="toctree-l5"><a class="reference internal" href="#bind-dataset-binddataset">1.2.3.2.2. Bind Dataset </a></li>
-<li class="toctree-l5"><a class="reference internal" href="#check-coverage-checkcoverage">1.2.3.2.3. Check Coverage </a></li>
-<li class="toctree-l5"><a class="reference internal" href="#remove-aoi-deleteaoi">1.2.3.2.4. Remove AOI </a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="#imagery-timeline">1.2.3.3. Imagery Timeline</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#order-s-imagery-data">1.2.3.4. Order’s Imagery Data</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#delivery-settings">1.2.4. Delivery Settings</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#order-payment">1.2.5. Order Payment</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#payment-is-being-calculated">1.2.5.1. Payment is being Calculated</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#payment-can-be-made-now">1.2.5.2. Payment Can Be Made Now</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#order-has-been-paid">1.2.5.3. Order Has Been Paid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#delivery-settings">1.2.3. Delivery Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#quote-place-order">1.2.4. Quote &amp; Place Order</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#quote">1.2.4.1. Quote</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#place-order">1.2.4.2. Place Order</a></li>
 </ul>
 </li>
 </ul>
@@ -81,7 +77,8 @@
 <li class="toctree-l1"><a class="reference internal" href="AnnotationStage.html">3. Annotation Stage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="QC.html">4. QC</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Annotator.html">5. Annotator</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Training.html">6. Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="UserProfile.html">6. User Profile (Annotator)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Training.html">7. Training</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Other Functions</span></p>
 <ul>
@@ -124,62 +121,17 @@
 </div></blockquote>
 <section id="create-order">
 <h2><span class="section-number">1.1. </span>Create Order<a class="headerlink" href="#create-order" title="Permalink to this headline"></a></h2>
-<p>Users can start a new order by clicking on the <img alt="CreateOrder" src="_images/CreateOrder.png" style="height: 21px;" /> button located on the top-right of the interface. The following options will be available:</p>
-<p>Service type:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>Modeling &amp; Annotation: the order will apply modeling and Ecopia annotation as the service;</p></li>
-<li><p>Modeling: the order will apply modeling and users will annotate the vector result (if applicable) within their own organization.</p></li>
-</ul>
-</div></blockquote>
-<p>Click on “Submit” after setting the order name and selecting service type, the order list page will jump to basic settings page for users to provide more detailed information. The settings page can also be opened by clicking <img alt="ViewDetails" src="_images/ViewDetails.png" style="height: 21px;" /> in the action column of each order.</p>
+<p>Users can start a new order by clicking on the <img alt="CreateOrder" src="_images/CreateOrder.png" style="height: 21px;" /> button located on the top-right of the interface.</p>
+<p>Click on “Submit” after setting the order name, the order list page will jump to basic settings page for users to provide more detailed information. The settings page can also be opened by clicking <img alt="ViewDetails" src="_images/ViewDetails.png" style="height: 21px;" /> in the action column of each order.</p>
 </section>
 <section id="action-settings-viewdetails">
 <h2><span class="section-number">1.2. </span>Action: Settings <img alt="ViewDetails" src="_images/ViewDetails.png" style="height: 21px;" /><a class="headerlink" href="#action-settings-viewdetails" title="Permalink to this headline"></a></h2>
 <p>Users can view and edit details of the order by clicking on <img alt="ViewDetails" src="_images/ViewDetails.png" style="height: 21px;" /> button in the action column. The page will jump to basic settings of the order by default.</p>
-<section id="basic-settings">
-<h3><span class="section-number">1.2.1. </span>Basic Settings<a class="headerlink" href="#basic-settings" title="Permalink to this headline"></a></h3>
-<p>This page contains basic information about the order. Users can modify the name of the order, geography, industry, and delivery contaction information (Email) to an order that is not placed yet. Click on “Save &amp; Continue” to apply the changes and continue to Extraction Settings.</p>
-</section>
-<section id="extraction-settings">
-<h3><span class="section-number">1.2.2. </span>Extraction Settings<a class="headerlink" href="#extraction-settings" title="Permalink to this headline"></a></h3>
-<p>This space allows users to select desired features (Catetitle) to be extracted from the provided imagery.</p>
-<ol class="arabic">
-<li><p>Select Catetitle: by clicking on the checkbox next to each Catetitle</p>
-<blockquote>
-<div><ul class="simple">
-<li><dl class="simple">
-<dt>Catetitles are categorized into 3 different Categories:</dt><dd><ul>
-<li><p><strong>3D Buildings</strong>: includes 3d_building, 3d_single_tree, DSM, and ortho_mosaic</p></li>
-<li><p><strong>2D Landcover</strong>: includes building, road, manmade and natural landcover features</p></li>
-<li><p><strong>Advanced Transportation</strong>: includes different types of centerlines, road marking, signs and other transportation features that can be used for guiding and navigation</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><p>For definition of each Catetitle, please refer to Glossary for more details.</p></li>
-</ul>
-</div></blockquote>
-</li>
-<li><p>Users can select the category in general or select second-tier categories to further differentiate the features</p></li>
-<li><p>Selected Catetitles will be reflected in the <strong>Selected Catetitles</strong> section in the settings</p></li>
-<li><p>To help Ecopia team better understand the extraction requirements, users can attach supporting document in the <strong>Attached Document for Extraction Request</strong> section.</p></li>
-<li><p>Click on “Save &amp; Continue” to apply the changes and continue to Area of Interest.</p></li>
-</ol>
-<blockquote>
-<div><figure class="align-center" id="id2">
-<img alt="ExtractionSettings" src="_images/ExtractionSettings.png" />
-<figcaption>
-<p><span class="caption-text"><em>Extraction Settings</em></span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
-</figcaption>
-</figure>
-</div></blockquote>
-</section>
-<section id="area-of-interest">
-<h3><span class="section-number">1.2.3. </span>Area of Interest<a class="headerlink" href="#area-of-interest" title="Permalink to this headline"></a></h3>
-<p>This section allows users to upload the area that the extraction needs to be done and add corresponding imagery data.</p>
+<section id="input-data">
+<h3><span class="section-number">1.2.1. </span>Input Data<a class="headerlink" href="#input-data" title="Permalink to this headline"></a></h3>
+<p>This page contains setting information for order’s AOI and corresponding imagery data that will be used for production.</p>
 <section id="order-s-aoi-data">
-<h4><span class="section-number">1.2.3.1. </span>Order’s AOI Data<a class="headerlink" href="#order-s-aoi-data" title="Permalink to this headline"></a></h4>
+<h4><span class="section-number">1.2.1.1. </span>Order’s AOI Data<a class="headerlink" href="#order-s-aoi-data" title="Permalink to this headline"></a></h4>
 <p>By clicking on the space on the top right corner, users can upload the AOI file from local machine. Once uploaded, the AOI will be listed under <strong>Order’s AOI Data</strong> section of the page.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -187,34 +139,14 @@
 </div>
 </section>
 <section id="aoi-actions">
-<h4><span class="section-number">1.2.3.2. </span>AOI Actions<a class="headerlink" href="#aoi-actions" title="Permalink to this headline"></a></h4>
+<h4><span class="section-number">1.2.1.2. </span>AOI Actions<a class="headerlink" href="#aoi-actions" title="Permalink to this headline"></a></h4>
 <p>Once the AOI and imagery data has been added to the order. The following actions needs to be completed before proceeding with the order.</p>
 <section id="preview-aoi-previewaoi">
-<h5><span class="section-number">1.2.3.2.1. </span>Preview AOI <img alt="PreviewAOI" src="_images/PreviewAOI.png" style="height: 25px;" /><a class="headerlink" href="#preview-aoi-previewaoi" title="Permalink to this headline"></a></h5>
+<h5><span class="section-number">1.2.1.2.1. </span>Preview AOI <img alt="PreviewAOI" src="_images/PreviewAOI.png" style="height: 25px;" /><a class="headerlink" href="#preview-aoi-previewaoi" title="Permalink to this headline"></a></h5>
 <p>By clicking <img alt="PreviewAOI" src="_images/PreviewAOI.png" style="height: 25px;" /> button, users can review the uploaded AOI file overlay with Google Maps.</p>
-</section>
-<section id="bind-dataset-binddataset">
-<h5><span class="section-number">1.2.3.2.2. </span>Bind Dataset <img alt="binddataset" src="_images/binddataset.png" style="height: 21px;" /><a class="headerlink" href="#bind-dataset-binddataset" title="Permalink to this headline"></a></h5>
-<p>By clicking <img alt="binddataset" src="_images/binddataset.png" style="height: 21px;" /> button, bind dataset prompt window will open and users can select from a list of existing imagery datasets to bind with the AOI. After locating the dataset that needs to be used, click on the <span class="guilabel">+</span> in the action column to bind the dataset.</p>
-<figure class="align-center" id="id3">
-<img alt="BindDatasetWindow" src="_images/BindDatasetWindow.png" style="height: 480px;" />
-<figcaption>
-<p><span class="caption-text"><em>Bind Dataset Window</em></span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
-</figcaption>
-</figure>
-</section>
-<section id="check-coverage-checkcoverage">
-<h5><span class="section-number">1.2.3.2.3. </span>Check Coverage <img alt="checkcoverage" src="_images/checkcoverage.png" style="height: 21px;" /><a class="headerlink" href="#check-coverage-checkcoverage" title="Permalink to this headline"></a></h5>
-<p>Once the corresponding imagery dataset is processed and bound with target AOI properly, users can click <img alt="checkcoverage" src="_images/checkcoverage.png" style="height: 21px;" /> button to review the coverage checking process in the coverage information window.</p>
-<figure class="align-center" id="id4">
-<img alt="Coverage Check Window" src="_images/CoverageInformationWindow.png" style="height: 480px;" />
-<figcaption>
-<p><span class="caption-text"><em>Coverage Check Window</em></span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
-</figcaption>
-</figure>
 <p>The <strong>AOI Status</strong> and <strong>Coverage</strong> column will change accordingly based on the coverage check status.</p>
-<table class="colwidths-given tight-table docutils align-default" id="id5">
-<caption><span class="caption-text">Coverage Check Status</span><a class="headerlink" href="#id5" title="Permalink to this table"></a></caption>
+<table class="colwidths-given tight-table docutils align-default" id="id2">
+<caption><span class="caption-text">Coverage Check Status</span><a class="headerlink" href="#id2" title="Permalink to this table"></a></caption>
 <colgroup>
 <col style="width: 15%" />
 <col style="width: 15%" />
@@ -255,18 +187,18 @@
 </table>
 </section>
 <section id="remove-aoi-deleteaoi">
-<h5><span class="section-number">1.2.3.2.4. </span>Remove AOI <img alt="DeleteAOI" src="_images/DeleteAOI.png" style="height: 32px;" /><a class="headerlink" href="#remove-aoi-deleteaoi" title="Permalink to this headline"></a></h5>
+<h5><span class="section-number">1.2.1.2.2. </span>Remove AOI <img alt="DeleteAOI" src="_images/DeleteAOI.png" style="height: 32px;" /><a class="headerlink" href="#remove-aoi-deleteaoi" title="Permalink to this headline"></a></h5>
 <p>AOI will be removed once click on the <img alt="DeleteAOI" src="_images/DeleteAOI.png" style="height: 32px;" /> button.</p>
 </section>
 </section>
 <section id="imagery-timeline">
-<h4><span class="section-number">1.2.3.3. </span>Imagery Timeline<a class="headerlink" href="#imagery-timeline" title="Permalink to this headline"></a></h4>
+<h4><span class="section-number">1.2.1.3. </span>Imagery Timeline<a class="headerlink" href="#imagery-timeline" title="Permalink to this headline"></a></h4>
 <blockquote>
 <div><p>In order to have the system generate the most accurate estimate delivery time, users are required to provide <strong>Expect Image Arrivel</strong> time and confirm when the imagery actually arrives.</p>
 </div></blockquote>
 </section>
 <section id="order-s-imagery-data">
-<h4><span class="section-number">1.2.3.4. </span>Order’s Imagery Data<a class="headerlink" href="#order-s-imagery-data" title="Permalink to this headline"></a></h4>
+<h4><span class="section-number">1.2.1.4. </span>Order’s Imagery Data<a class="headerlink" href="#order-s-imagery-data" title="Permalink to this headline"></a></h4>
 <p>Imagery datasets that will be used for this order will be listed in this section. By clicking on the “Add Imagery” button in the <strong>Order’s Imagery Data</strong> section, users can add imagery data to the order by providing the following information:</p>
 <blockquote>
 <div><ul class="simple">
@@ -276,17 +208,76 @@
 <li><p>Image Path: Ecopia provides different types of data transfer protocol. Users can select the one that best filt their needs from the protocol dropdown list.</p></li>
 </ul>
 </div></blockquote>
-<figure class="align-center" id="id6">
+<figure class="align-center" id="id3">
 <img alt="AddStandardImagery" src="_images/AddStandardImagery.png" />
 <figcaption>
-<p><span class="caption-text"><em>Add Standard Imagery</em></span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Add Standard Imagery</em></span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>After the information is provided, click on “Submit”. In the following window, bind the imagery data with AOI that will be used for feature extraction and click on “Confirm” to complete the imagery adding process.</p>
 </section>
 </section>
+<section id="extraction-settings">
+<h3><span class="section-number">1.2.2. </span>Extraction Settings<a class="headerlink" href="#extraction-settings" title="Permalink to this headline"></a></h3>
+<p>This space allows users to select desired features (Catetitle) to be extracted from the provided imagery.</p>
+<ol class="arabic">
+<li><p>A list of standard product packages are listed on top of the catetitles. Users can select one or multiple and corresponding catetiles will be automatically selected in the catetitle list below.</p></li>
+<li><p>Select Catetitle: by clicking on the checkbox next to each Catetitle</p>
+<blockquote>
+<div><ul class="simple">
+<li><dl class="simple">
+<dt>Catetitles are categorized into 3 different Categories:</dt><dd><ul>
+<li><p><strong>Raster</strong>: include DSM and orthomosaic data generated through production pipeline</p></li>
+<li><p><strong>2D Landcover</strong>: includes building, road, manmade and natural landcover features; height attribute can be selected to construct 3D landcover data</p></li>
+<li><p><strong>Advanced Transportation</strong>: includes different types of transportation related centerlines, road marking, signs and other transportation features that can be used for guiding and navigation</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>For definition of each Catetitle, please refer to Glossary for more details.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Users can select the category in general or select second-tier categories to further differentiate the features</p>
+<blockquote>
+<div><figure class="align-center" id="id4">
+<img alt="Second-Tier Categories" src="_images/SecondTier.png" />
+<figcaption>
+<p><span class="caption-text"><em>Example of Second-Tier Category</em></span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+</li>
+<li><p>Selected Catetitles will be reflected in the <strong>Advanced settings for selected products</strong> section in the settings</p></li>
+<li><p>In the <strong>Advanced settings for selected products</strong> section, users can modify the catetitle name in the delivery shapefile.</p>
+<blockquote>
+<div><ul>
+<li><p>Catetitle name in the delivery shapefile can be modified by clicking on the edit button;</p></li>
+<li><p>Special capturing rules can be added to advance settings to provide production team with clear instructions.</p>
+<blockquote>
+<div><figure class="align-center">
+<img alt="Catetitle Advanced Settings" src="_images/catetitleAdvancedSettings.png" />
+</figure>
+<p><em>Catetitle Advanced Settings</em></p>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>To help Ecopia team better understand the extraction requirements, users can attach supporting document in the <strong>Attached Document for Extraction Request</strong> section.</p></li>
+<li><p>Click on “Save &amp; Continue” to apply the changes and continue to Area of Interest.</p></li>
+</ol>
+<blockquote>
+<div><figure class="align-center" id="id5">
+<img alt="ExtractionSettings" src="_images/ExtractionSettings.png" />
+<figcaption>
+<p><span class="caption-text"><em>Extraction Settings</em></span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+</section>
 <section id="delivery-settings">
-<h3><span class="section-number">1.2.4. </span>Delivery Settings<a class="headerlink" href="#delivery-settings" title="Permalink to this headline"></a></h3>
+<h3><span class="section-number">1.2.3. </span>Delivery Settings<a class="headerlink" href="#delivery-settings" title="Permalink to this headline"></a></h3>
 <p>Users can define how the data should be delivered by providing the following information in the delivery settings section:</p>
 <ol class="arabic">
 <li><p><strong>Delivery Projection</strong>: projection system that should be applied to the vector result. The following options are available:</p>
@@ -300,48 +291,46 @@
 </div></blockquote>
 </li>
 <li><p><strong>Delivery Format</strong>: data format that the vector result will be delivered in</p></li>
-<li><p><strong>Expect Delivery Date</strong>: by clicking on the “Estimate Delivery” button to the right, users can obtain the earliest date that the system can deliver the vector results. Users can select any date after the system estimated earliest delivery date.</p></li>
 <li><p><strong>Deliver Grid Size</strong>: grid can be applied to the vector result to split larger polygon into smaller pieces.</p></li>
 </ol>
 <p>Click on “Save &amp; Continue” to apply all changes and move to <strong>Order Payment</strong> section.</p>
 </section>
-<section id="order-payment">
-<h3><span class="section-number">1.2.5. </span>Order Payment<a class="headerlink" href="#order-payment" title="Permalink to this headline"></a></h3>
-<p>Users can follow the three stages of payment below to complete the payment process.</p>
-<section id="payment-is-being-calculated">
-<h4><span class="section-number">1.2.5.1. </span>Payment is being Calculated<a class="headerlink" href="#payment-is-being-calculated" title="Permalink to this headline"></a></h4>
-<p>At this stage, Ecopia production admin has been notified and review the payment amount of the order.</p>
-<figure class="align-center" id="id7">
-<img alt="Calculating Payment" src="_images/CalculatingPayment.png" />
+<section id="quote-place-order">
+<h3><span class="section-number">1.2.4. </span>Quote &amp; Place Order<a class="headerlink" href="#quote-place-order" title="Permalink to this headline"></a></h3>
+<p>Once the AOI information and extraction settings are provided through previous pages, users can obtain quote information and place order to put the order into production.</p>
+<section id="quote">
+<h4><span class="section-number">1.2.4.1. </span>Quote<a class="headerlink" href="#quote" title="Permalink to this headline"></a></h4>
+<p>User can obtain quote information by clicking on the <span class="guilabel">Quote</span> button. At this stage, the system is calculating the quote for the order based on the extraction settings and size of the AOI. The process will normally take a few minutes to complete.</p>
+<figure class="align-center" id="id6">
+<img alt="Calculating Quote" src="_images/CalculatingQuote.png" />
 <figcaption>
-<p><span class="caption-text"><em>Payment is being Calculated</em></span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Quote is being Calculated</em></span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
+<p>The following information will be provided:</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p><strong>Cost Quotation(USD)</strong>: quotation for this prodction order in USD;</p></li>
+<li><p><strong>Delivery Days</strong>: number of days required for production team to deliver the result;</p></li>
+<li><p><strong>Quotation Expired Time</strong>: the expiration time of the current quote</p></li>
+<li><p><strong>Order Place Status</strong>: current status of the order</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Not Applied: the order has not been placed by the current users.</p></li>
+<li><p>Order has been placed at … : order has been placed at certain time stamp and system has sent notification to the production admin.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
 </section>
-<section id="payment-can-be-made-now">
-<h4><span class="section-number">1.2.5.2. </span>Payment Can Be Made Now<a class="headerlink" href="#payment-can-be-made-now" title="Permalink to this headline"></a></h4>
-<p>At this stage, Ecopia production admin has reviewed and approved the order and amount to be paid. Order owner will be notified via Email once the order reach this stage.</p>
-<figure class="align-center" id="id8">
+<section id="place-order">
+<h4><span class="section-number">1.2.4.2. </span>Place Order<a class="headerlink" href="#place-order" title="Permalink to this headline"></a></h4>
+<p>Once the quote is calculated, users can place order by clicking on the <span class="guilabel">Place Order</span>.</p>
+<figure class="align-center" id="id7">
 <img alt="PayNow" src="_images/PayNow.png" />
 <figcaption>
-<p><span class="caption-text"><em>Payment is Ready to be Made</em></span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
-</figcaption>
-</figure>
-<p>By clicking on the <span class="guilabel">Pay Now</span> button, the page will jump to checkout page where payment can be made.</p>
-<figure class="align-center" id="id9">
-<img alt="Checkout" src="_images/Checkout.png" style="height: 480px;" />
-<figcaption>
-<p><span class="caption-text"><em>Checkout Page</em></span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
-</figcaption>
-</figure>
-</section>
-<section id="order-has-been-paid">
-<h4><span class="section-number">1.2.5.3. </span>Order Has Been Paid<a class="headerlink" href="#order-has-been-paid" title="Permalink to this headline"></a></h4>
-<p>At this stage, the payment has been made and the vector result will be delivered once it is ready.</p>
-<figure class="align-center" id="id10">
-<img alt="PaidOrder" src="_images/PaidOrder.png" />
-<figcaption>
-<p><span class="caption-text"><em>Order Has Been Paid</em></span><a class="headerlink" href="#id10" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Payment is Ready to be Made</em></span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>

@@ -13,57 +13,26 @@ Through partner order, users can create and place mapping project orders based o
 Create Order
 ******************
 
-Users can start a new order by clicking on the |CreateOrder| button located on the top-right of the interface. The following options will be available:
+Users can start a new order by clicking on the |CreateOrder| button located on the top-right of the interface. 
 
-Service type:
+.. The following options will be available:
 
-    * Modeling & Annotation: the order will apply modeling and Ecopia annotation as the service;
-    * Modeling: the order will apply modeling and users will annotate the vector result (if applicable) within their own organization.
+.. Service type:
 
-Click on "Submit" after setting the order name and selecting service type, the order list page will jump to basic settings page for users to provide more detailed information. The settings page can also be opened by clicking |ViewDetails| in the action column of each order.
+..    * Modeling & Annotation: the order will apply modeling and Ecopia annotation as the service;
+..    * Modeling: the order will apply modeling and users will annotate the vector result (if applicable) within their own organization.
+
+Click on "Submit" after setting the order name, the order list page will jump to basic settings page for users to provide more detailed information. The settings page can also be opened by clicking |ViewDetails| in the action column of each order.
 
 Action: Settings |ViewDetails|
 *************************************
 
 Users can view and edit details of the order by clicking on |ViewDetails| button in the action column. The page will jump to basic settings of the order by default. 
 
-Basic Settings
+Input Data
 ===============
 
-This page contains basic information about the order. Users can modify the name of the order, geography, industry, and delivery contaction information (Email) to an order that is not placed yet. Click on "Save & Continue" to apply the changes and continue to Extraction Settings.
-
- 
-Extraction Settings
-====================
-
-This space allows users to select desired features (Catetitle) to be extracted from the provided imagery.
-
-
-#. Select Catetitle: by clicking on the checkbox next to each Catetitle
-
-    * Catetitles are categorized into 3 different Categories:
-        * **3D Buildings**: includes 3d_building, 3d_single_tree, DSM, and ortho_mosaic
-        * **2D Landcover**: includes building, road, manmade and natural landcover features
-        * **Advanced Transportation**: includes different types of centerlines, road marking, signs and other transportation features that can be used for guiding and navigation
-    * For definition of each Catetitle, please refer to Glossary for more details.
-
-
-#. Users can select the category in general or select second-tier categories to further differentiate the features
-#. Selected Catetitles will be reflected in the **Selected Catetitles** section in the settings
-#. To help Ecopia team better understand the extraction requirements, users can attach supporting document in the **Attached Document for Extraction Request** section.
-#. Click on "Save & Continue" to apply the changes and continue to Area of Interest.
-
- .. figure:: /images/ExtractionSettings.png
-    :align: center
-    :alt: ExtractionSettings
-    
-
-    *Extraction Settings*
-
-Area of Interest
-====================
-
-This section allows users to upload the area that the extraction needs to be done and add corresponding imagery data.
+This page contains setting information for order's AOI and corresponding imagery data that will be used for production.
 
 Order's AOI Data
 ------------------
@@ -85,30 +54,6 @@ Preview AOI |PreviewAOI|
 
 By clicking |PreviewAOI| button, users can review the uploaded AOI file overlay with Google Maps.
 
-Bind Dataset |binddataset|
-+++++++++++++++++++++++++++++
-
-By clicking |BindDataset| button, bind dataset prompt window will open and users can select from a list of existing imagery datasets to bind with the AOI. After locating the dataset that needs to be used, click on the :guilabel:`+` in the action column to bind the dataset.
-
-.. figure:: /images/BindDatasetWindow.png
-    :alt: BindDatasetWindow
-    :align: center
-    :height: 480
-
-    *Bind Dataset Window*
-
-
-Check Coverage |checkcoverage|
-++++++++++++++++++++++++++++++++
-
-Once the corresponding imagery dataset is processed and bound with target AOI properly, users can click |checkcoverage| button to review the coverage checking process in the coverage information window.
-
-.. figure:: /images/CoverageInformationWindow.png
-    :alt: Coverage Check Window
-    :align: center
-    :height: 480
-
-    *Coverage Check Window*
 
 The **AOI Status** and **Coverage** column will change accordingly based on the coverage check status.
 
@@ -165,6 +110,58 @@ Imagery datasets that will be used for this order will be listed in this section
 
 After the information is provided, click on "Submit". In the following window, bind the imagery data with AOI that will be used for feature extraction and click on "Confirm" to complete the imagery adding process.
 
+ 
+Extraction Settings
+====================
+
+This space allows users to select desired features (Catetitle) to be extracted from the provided imagery.
+
+#. A list of standard product packages are listed on top of the catetitles. Users can select one or multiple and corresponding catetiles will be automatically selected in the catetitle list below.
+#. Select Catetitle: by clicking on the checkbox next to each Catetitle
+
+    * Catetitles are categorized into 3 different Categories:
+        * **Raster**: include DSM and orthomosaic data generated through production pipeline
+        * **2D Landcover**: includes building, road, manmade and natural landcover features; height attribute can be selected to construct 3D landcover data
+        * **Advanced Transportation**: includes different types of transportation related centerlines, road marking, signs and other transportation features that can be used for guiding and navigation
+    * For definition of each Catetitle, please refer to Glossary for more details.
+
+
+#. Users can select the category in general or select second-tier categories to further differentiate the features
+
+    .. figure:: /images/SecondTier.png
+        :alt: Second-Tier Categories
+        :align: center
+
+        *Example of Second-Tier Category*
+
+#. Selected Catetitles will be reflected in the **Advanced settings for selected products** section in the settings
+#. In the **Advanced settings for selected products** section, users can modify the catetitle name in the delivery shapefile.
+    
+    * Catetitle name in the delivery shapefile can be modified by clicking on the edit button;
+    * Special capturing rules can be added to advance settings to provide production team with clear instructions.
+
+
+        .. figure:: /images/catetitleAdvancedSettings.png
+            :alt: Catetitle Advanced Settings
+            :align: center
+
+        *Catetitle Advanced Settings*
+
+
+#. To help Ecopia team better understand the extraction requirements, users can attach supporting document in the **Attached Document for Extraction Request** section.
+#. Click on "Save & Continue" to apply the changes and continue to Area of Interest.
+
+ .. figure:: /images/ExtractionSettings.png
+    :align: center
+    :alt: ExtractionSettings
+    
+
+    *Extraction Settings*
+
+
+
+
+
 
 
 Delivery Settings
@@ -180,29 +177,38 @@ Users can define how the data should be delivered by providing the following inf
     * Provide EPSG and added as an option
 
 #. **Delivery Format**: data format that the vector result will be delivered in
-#. **Expect Delivery Date**: by clicking on the "Estimate Delivery" button to the right, users can obtain the earliest date that the system can deliver the vector results. Users can select any date after the system estimated earliest delivery date.
 #. **Deliver Grid Size**: grid can be applied to the vector result to split larger polygon into smaller pieces. 
 
 Click on "Save & Continue" to apply all changes and move to **Order Payment** section.
 
-Order Payment
+Quote & Place Order
 =====================
 
-Users can follow the three stages of payment below to complete the payment process.
+Once the AOI information and extraction settings are provided through previous pages, users can obtain quote information and place order to put the order into production.
 
-Payment is being Calculated
+Quote
 ----------------------------
-At this stage, Ecopia production admin has been notified and review the payment amount of the order.
+User can obtain quote information by clicking on the :guilabel:`Quote` button. At this stage, the system is calculating the quote for the order based on the extraction settings and size of the AOI. The process will normally take a few minutes to complete.
 
-.. figure:: /images/CalculatingPayment.png
-    :alt: Calculating Payment
+.. figure:: /images/CalculatingQuote.png
+    :alt: Calculating Quote
     :align: center
 
-    *Payment is being Calculated*
+    *Quote is being Calculated*
 
-Payment Can Be Made Now
+The following information will be provided:
+
+    #. **Cost Quotation(USD)**: quotation for this prodction order in USD;
+    #. **Delivery Days**: number of days required for production team to deliver the result;
+    #. **Quotation Expired Time**: the expiration time of the current quote
+    #. **Order Place Status**: current status of the order
+
+        * Not Applied: the order has not been placed by the current users.
+        * Order has been placed at ... : order has been placed at certain time stamp and system has sent notification to the production admin.
+
+Place Order
 ----------------------------
-At this stage, Ecopia production admin has reviewed and approved the order and amount to be paid. Order owner will be notified via Email once the order reach this stage.
+Once the quote is calculated, users can place order by clicking on the :guilabel:`Place Order`. 
 
 .. figure:: /images/PayNow.png
     :alt: PayNow
@@ -210,25 +216,6 @@ At this stage, Ecopia production admin has reviewed and approved the order and a
 
     *Payment is Ready to be Made*
 
-By clicking on the :guilabel:`Pay Now` button, the page will jump to checkout page where payment can be made.
-
-.. figure:: /images/Checkout.png
-    :alt: Checkout
-    :align: center
-    :height: 480
-
-    *Checkout Page*
-
-Order Has Been Paid
-----------------------------
-At this stage, the payment has been made and the vector result will be delivered once it is ready.
-
-
-.. figure:: /images/PaidOrder.png
-    :alt: PaidOrder
-    :align: center
-
-    *Order Has Been Paid*
 
 Action: Delete Order |DeleteAOI|
 *********************************
