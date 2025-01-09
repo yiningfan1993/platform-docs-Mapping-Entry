@@ -121,7 +121,14 @@ If the provided imagery failed to cover the entire provided AOI, the following n
 The following actions are available to the users:
 
 #. Users can click on **Coverage Check Report** to review the actual coverage and download shapefile for the missing coverage area;
-#. After the users adjusted the content in the S3 path to provide more coverage, they can choose to :guilabel:`Validate Again`` to see if the adjusted content fully covers the AOI;
+
+    .. figure:: /images/CoverageCheckReport.png
+        :alt: CoverageCheckReport
+        :align: center
+
+        *Coverage Check Report*
+
+#. After the users adjusted the content in the S3 path to provide more coverage, they can choose to :guilabel:`Validate Again` to see if the adjusted content fully covers the AOI;
 #. Users can also choose to :guilabel:`Ignore Missing Area` if the missing area is not crucial to the project. 
 
 
@@ -140,11 +147,12 @@ This space allows users to select desired features (Catetitle) to be extracted f
 #. A list of standard product packages are listed on top of the catetitles. Users can select one or multiple and corresponding catetiles will be automatically selected in the catetitle list below.
 #. Select Catetitle: by clicking on the checkbox next to each Catetitle
 
-    * Catetitles are categorized into 3 different Categories:
+    * Catetitles are categorized into 4 different Categories:
+
         * **Raster**: include DSM and orthomosaic data generated through production pipeline
         * **2D Landcover**: includes building, road, manmade and natural landcover features; height attribute can be selected to construct 3D landcover data
         * **Advanced Transportation**: includes different types of transportation related centerlines, polygons, points and other transportation features that can be used for guiding and navigation
-        * **Non-Standard**: features that are not derived through modeling. Features have neem categorized into centerlines, road lines, polygons, and signs.
+        * **Non-Standard**: features that are not derived through modeling. These features have been categorized into centerlines, road lines, polygons, and signs.
             
             * users can also define new categories by clicking on :guilabel:`+ Add Category` button. In the pop-up window, category name, geometry tyoe, definition, image example, and annotate rules are required to create this new category.
 
@@ -244,12 +252,45 @@ Users can delete an order by clicking on the |DeleteAOI| button in the action co
 
 Action: Delivery |Delivery|
 *********************************
-Email notification will be sent to order owner once the vector result is delivered. By clicking on the |Delivery| button, users can view the deliveries and their path on the platform. To download the vector results
+Email notification will be sent to order owner once the vector result is delivered. By clicking on the |Delivery| button, users can view the deliveries and their path on the platform. 
+
+
+.. figure:: /images/DeliveryResult.png
+    :alt: DeliveryResult
+    :align: center
+
+    *Delivery Result Window*
+
+The following information is included:
+
+#. **Delivery Method**: pre-defined delivery method
+#. **Platform Link**: users can navigate to the file's platform location by clicking on the link. Users can also choose to click on the :guilabel:`Download Result` button to download the file to local machine
+#. **Raster WMTS URL**: URL to raster dataset in WMTS format
+#. **Raster WMTS Expiration**: date and time that the raster WMTS will be expired
+#. **Vector WMTS URL**: URL to vector results in WMTS format
+
+.. note::
+      If a new vector result has been delivered, the delivery result window will display the corresponding information for the latest result.
+
+
+
+
+Action: Review |Review|
+*********************************
+By clicking on the |Review| button, the QC review project for the current delivery result will be opened in different page in QC tools. Users can perform regular QC review workflow then submit comment for production team to fix the comment accordingly.
 
 
 Action: Feedback |Feedback|
 *********************************
-Users can provide feedback to the current order based on the quality and timing of the delivery.
+Users can upload their offline comment in zipped shapefile format for production team to review and fix accordingly. Along with the zipped shapefile that contains comments, users can also provide writing description and imagery example for production team to better understand the issues.
+
+.. figure:: /images/OfflineComments.png
+    :alt: OfflineComments
+    :align: center
+
+    *Upload Offline Comments*
+
+
 
 
 
@@ -287,4 +328,7 @@ Users can provide feedback to the current order based on the quality and timing 
       :height: 30
 
 .. |Feedback| image:: /images/Feedback.png
+      :height: 30
+
+.. |Review| image:: /images/Review.png
       :height: 30
