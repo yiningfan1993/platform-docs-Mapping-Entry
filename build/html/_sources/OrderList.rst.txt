@@ -10,6 +10,15 @@ Order list is a centralized space for users to create order, manage order, monit
 
     *General Interface of Order List*
 
+The following information is contained in the order list table:
+
+    #. Order ID: unique identifier of the order;
+    #. Order Name: name of the order;
+    #. Order Status: current status of the order;
+    #. Quote Value: quote value generated based on the size of AOI and selected catetitles;
+    #. Expect Image Arrival: expect image arrival time provided by users;
+    #. Expect Delivery Date: expect delivery date of the vector results.
+
 Create Order
 ******************
 
@@ -189,8 +198,8 @@ Advanced Settings For Selected Products
 
 In the **Advanced settings for selected products** section, users can modify the catetitle name in the delivery shapefile.
     
-    * Catetitle name in the delivery shapefile can be modified by clicking on the |Edit| button;
-    * Special capturing rules can be added through |advancesettings| to provide production team with clear instructions.
+    * Catetitle name in the delivery shapefile can be modified by clicking on the |Edit| button, click on :guilabel:`Save` to save the changes;
+    * Special capturing rules can be added through |advancesettings| to provide production team with clear instructions, click on :guilabel:`Update` to save provided information.
 
 
         .. figure:: /images/catetitleAdvancedSettings.png
@@ -199,8 +208,10 @@ In the **Advanced settings for selected products** section, users can modify the
 
             *Catetitle Advanced Settings*
 
+    * Users can also dictate whether overlapping is allowed. Users can also adjust the order of overlapping by re-arranging the order of catetitles.
 
-To help Ecopia team better understand the extraction requirements, users can attach supporting document in the **Attached Document for Extraction Request** section.
+
+To help production team better understand the extraction requirements, users can also attach supporting document in the **Attached Document for Extraction Request** section.
 
 Click on "Save & Continue" to apply the changes and continue to **Delivery Settings**.
 
