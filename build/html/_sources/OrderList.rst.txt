@@ -22,7 +22,15 @@ Users can start a new order by clicking on the |CreateOrder| button located on t
 ..    * Modeling & Annotation: the order will apply modeling and Ecopia annotation as the service;
 ..    * Modeling: the order will apply modeling and users will annotate the vector result (if applicable) within their own organization.
 
-Click on "Submit" after setting the order name, the order list page will jump to basic settings page for users to provide more detailed information. The settings page can also be opened by clicking |ViewDetails| in the action column of each order.
+Click on "Submit" after setting the order name and provide corresponding opportunity ID from Salesforce, the order list page will jump to basic settings page for users to provide more detailed information. The settings page can also be opened by clicking |ViewDetails| in the action column of each order.
+
+ .. figure:: /images/CreateOrder.png
+    :align: center
+    :alt: CreateOrder
+
+    *Create Order*
+
+
 
 Action: Settings |ViewDetails|
 *************************************
@@ -74,7 +82,7 @@ Order's Imagery Data
 Add Imagery
 ++++++++++++
 
-Imagery datasets that will be used for this order are listed in this section. By clicking on the :guilabel:`Add Imagery` button in the **Imagery Data** section, users can add imagery data to the order by providing the following information:
+Order's imagery datasets are listed in this section. By clicking on the :guilabel:`Add Imagery` button in the **Imagery Data** section, users can add imagery data to the order by providing the following information:
 
     * Imagery Type:
 
@@ -91,11 +99,11 @@ Imagery datasets that will be used for this order are listed in this section. By
             * Imagery Provider: download imagery through imagery provider by providing resolution (mandatory) and vintage (not mandatory).
     
 
-.. figure:: /images/AddStandardImagery.png
-    :alt: AddStandardImagery
-    :align: center
+    .. figure:: /images/AddStandardImagery.png
+        :alt: AddStandardImagery
+        :align: center
 
-    *Add Standard Imagery*
+        *Add Standard Imagery*
 
 After the information is provided, click on :guilabel:`Submit`. The newly create imagery dataset will be listed in **Imagery Data** section. In the meantime, system will process the imagery automatically and run coverage check against the AOI. 
 
@@ -144,22 +152,26 @@ This space allows users to select desired features (Catetitle) to be extracted f
 
     *Extraction Settings*
 
-#. A list of standard product packages are listed on top of the catetitles. Users can select one or multiple and corresponding catetiles will be automatically selected in the catetitle list below.
-#. Select Catetitle: by clicking on the checkbox next to each Catetitle
+Product Packages
+----------------------
+A list of standard product packages are listed on top of the catetitles. Users can select one or multiple and corresponding catetiles will be automatically selected in the catetitle list below.
 
-    * Catetitles are categorized into 4 different Categories:
 
-        * **Raster**: include DSM and orthomosaic data generated through production pipeline
-        * **2D Landcover**: includes building, road, manmade and natural landcover features; height attribute can be selected to construct 3D landcover data
-        * **Advanced Transportation**: includes different types of transportation related centerlines, polygons, points and other transportation features that can be used for guiding and navigation
-        * **Non-Standard**: features that are not derived through modeling. These features have been categorized into centerlines, road lines, polygons, and signs.
+Select Catetitle
+------------------------
+Users can add catetitles to the extraction orders by clicking on the check box next to them.
+
+Catetitles are categorized into 4 different Categories:
+
+    * **Raster**: include DSM and orthomosaic data generated through production pipeline
+    * **2D Landcover**: includes building, road, manmade and natural landcover features; height attribute can be selected to construct 3D landcover data
+    * **Advanced Transportation**: includes different types of transportation related centerlines, polygons, points and other transportation features that can be used for guiding and navigation
+    * **Non-Standard**: features that are not derived through modeling. These features have been categorized into centerlines, road lines, polygons, and signs.
             
-            * users can also define new categories by clicking on :guilabel:`+ Add Category` button. In the pop-up window, category name, geometry tyoe, definition, image example, and annotate rules are required to create this new category.
-
-    * For definition of each Catetitle, please refer to Glossary for more details.
+        * users can also define new categories by clicking on :guilabel:`+ Add Category` button. In the pop-up window, category name, geometry tyoe, definition, image example, and annotate rules are required to create this new category.
 
 
-#. Users can select the category in general or select second-tier categories to further differentiate the features
+Users can select the category in general or select second-tier categories to further differentiate the features.
 
     .. figure:: /images/SecondTier.png
         :alt: Second-Tier Categories
@@ -167,22 +179,30 @@ This space allows users to select desired features (Catetitle) to be extracted f
 
         *Example of Second-Tier Category*
 
-#. Selected Catetitles will be reflected in the **Advanced settings for selected products** section in the settings
-#. In the **Advanced settings for selected products** section, users can modify the catetitle name in the delivery shapefile.
+Selected Catetitles will be reflected in the **Advanced settings for selected products** section in the settings
+
+.. note:: 
+    Please refer to product specifications for more detailed explanation of the catetitles.
+
+Advanced Settings For Selected Products
+----------------------------------------------
+
+In the **Advanced settings for selected products** section, users can modify the catetitle name in the delivery shapefile.
     
-    * Catetitle name in the delivery shapefile can be modified by clicking on the edit button;
-    * Special capturing rules can be added to advance settings to provide production team with clear instructions.
+    * Catetitle name in the delivery shapefile can be modified by clicking on the |Edit| button;
+    * Special capturing rules can be added through |advancesettings| to provide production team with clear instructions.
 
 
         .. figure:: /images/catetitleAdvancedSettings.png
             :alt: Catetitle Advanced Settings
             :align: center
 
-        *Catetitle Advanced Settings*
+            *Catetitle Advanced Settings*
 
 
-#. To help Ecopia team better understand the extraction requirements, users can attach supporting document in the **Attached Document for Extraction Request** section.
-#. Click on "Save & Continue" to apply the changes and continue to Area of Interest.
+To help Ecopia team better understand the extraction requirements, users can attach supporting document in the **Attached Document for Extraction Request** section.
+
+Click on "Save & Continue" to apply the changes and continue to **Delivery Settings**.
 
 
 
@@ -275,9 +295,9 @@ The following information is included:
 
 
 
-Action: Review |Review|
-*********************************
-By clicking on the |Review| button, the QC review project for the current delivery result will be opened in different page in QC tools. Users can perform regular QC review workflow then submit comment for production team to fix the comment accordingly.
+.. Action: Review |Review|
+.. *********************************
+.. By clicking on the |Review| button, the QC review project for the current delivery result will be opened in different page in QC tools. Users can perform regular QC review workflow then submit comment for production team to fix the comment accordingly.
 
 
 Action: Feedback |Feedback|
@@ -331,4 +351,7 @@ Users can upload their offline comment in zipped shapefile format for production
       :height: 30
 
 .. |Review| image:: /images/Review.png
+      :height: 30
+
+.. |advancesettings| image:: /images/AdvanceSettings.png
       :height: 30

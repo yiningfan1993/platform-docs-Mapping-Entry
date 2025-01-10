@@ -18,8 +18,8 @@ import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
-project = 'Ecopia Mapping Entry'
-copyright = '2024, Ecopia Tech Corporation'
+project = 'Ecopia Mapping Orders'
+copyright = '2025, Ecopia Tech Corporation'
 author = 'Ecopia Tech Corporation'
 
 # The full version, including alpha/beta/rc tags

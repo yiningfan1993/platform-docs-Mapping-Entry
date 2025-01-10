@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>1. Order List &mdash; Ecopia Mapping Entry 1.0.0 documentation</title>
+  <title>1. Order List &mdash; Ecopia Mapping Orders 1.0.0 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
@@ -21,8 +21,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="2. Project Progress" href="ProjectProgress.html" />
-    <link rel="prev" title="Welcome to the Documentation for the Mapping Entry!" href="index.html" /> 
+    <link rel="prev" title="Welcome to the Documentation for the Mapping Oders!" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -34,7 +33,7 @@
           
           
           <a href="index.html" class="icon icon-home">
-            Ecopia Mapping Entry
+            Ecopia Mapping Orders
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -63,7 +62,12 @@
 <li class="toctree-l4"><a class="reference internal" href="#coverage-check">1.2.1.3. Coverage Check</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#extraction-settings">1.2.2. Extraction Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#extraction-settings">1.2.2. Extraction Settings</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#product-packages">1.2.2.1. Product Packages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#select-catetitle">1.2.2.2. Select Catetitle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#advanced-settings-for-selected-products">1.2.2.3. Advanced Settings For Selected Products</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#delivery-settings">1.2.3. Delivery Settings</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#quote-place-order">1.2.4. Quote &amp; Place Order</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#quote">1.2.4.1. Quote</a></li>
@@ -74,20 +78,9 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#action-delete-order-deleteaoi">1.3. Action: Delete Order </a></li>
 <li class="toctree-l2"><a class="reference internal" href="#action-delivery-delivery">1.4. Action: Delivery </a></li>
-<li class="toctree-l2"><a class="reference internal" href="#action-review-review">1.5. Action: Review </a></li>
-<li class="toctree-l2"><a class="reference internal" href="#action-feedback-feedback">1.6. Action: Feedback </a></li>
+<li class="toctree-l2"><a class="reference internal" href="#action-feedback-feedback">1.5. Action: Feedback </a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="ProjectProgress.html">2. Project Progress</a></li>
-<li class="toctree-l1"><a class="reference internal" href="AnnotationStage.html">3. Annotation Stage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="QC.html">4. QC</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Annotator.html">5. Annotator</a></li>
-<li class="toctree-l1"><a class="reference internal" href="UserProfile.html">6. User Profile (Annotator)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Training.html">7. Training</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Other Functions</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Quotation.html">1. Quotation</a></li>
 </ul>
 
         </div>
@@ -96,7 +89,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">Ecopia Mapping Entry</a>
+          <a href="index.html">Ecopia Mapping Orders</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -127,7 +120,15 @@
 <section id="create-order">
 <h2><span class="section-number">1.1. </span>Create Order<a class="headerlink" href="#create-order" title="Permalink to this headline"></a></h2>
 <p>Users can start a new order by clicking on the <img alt="CreateOrder" src="_images/CreateOrder.png" style="height: 21px;" /> button located on the top-right of the interface.</p>
-<p>Click on “Submit” after setting the order name, the order list page will jump to basic settings page for users to provide more detailed information. The settings page can also be opened by clicking <img alt="ViewDetails" src="_images/ViewDetails.png" style="height: 21px;" /> in the action column of each order.</p>
+<p>Click on “Submit” after setting the order name and provide corresponding opportunity ID from Salesforce, the order list page will jump to basic settings page for users to provide more detailed information. The settings page can also be opened by clicking <img alt="ViewDetails" src="_images/ViewDetails.png" style="height: 21px;" /> in the action column of each order.</p>
+<blockquote>
+<div><figure class="align-center" id="id2">
+<img alt="CreateOrder" src="_images/CreateOrder.png" />
+<figcaption>
+<p><span class="caption-text"><em>Create Order</em></span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
 </section>
 <section id="action-settings-viewdetails">
 <h2><span class="section-number">1.2. </span>Action: Settings <img alt="ViewDetails" src="_images/ViewDetails.png" style="height: 21px;" /><a class="headerlink" href="#action-settings-viewdetails" title="Permalink to this headline"></a></h2>
@@ -141,16 +142,16 @@
 <h5><span class="section-number">1.2.1.1.1. </span>Add AOI Data<a class="headerlink" href="#add-aoi-data" title="Permalink to this headline"></a></h5>
 <p>By clicking <span class="guilabel">Add AOI</span> button on the top right corner, users can upload the AOI file from local machine or through S3 buckets. Once uploaded, the AOI will be listed under <strong>AOI Data</strong> section of the page.</p>
 <blockquote>
-<div><figure class="align-center" id="id2">
+<div><figure class="align-center" id="id3">
 <img alt="AddAOILocalDrive" src="_images/AddAOILocalDrive.png" />
 <figcaption>
-<p><span class="caption-text"><em>Add AOI via Local Drive</em></span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Add AOI via Local Drive</em></span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id3">
+<figure class="align-center" id="id4">
 <img alt="AddAOIS3" src="_images/AddAOIS3.png" />
 <figcaption>
-<p><span class="caption-text"><em>Add AOI via S3</em></span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Add AOI via S3</em></span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </div></blockquote>
@@ -174,7 +175,7 @@
 <h4><span class="section-number">1.2.1.2. </span>Order’s Imagery Data<a class="headerlink" href="#order-s-imagery-data" title="Permalink to this headline"></a></h4>
 <section id="add-imagery">
 <h5><span class="section-number">1.2.1.2.1. </span>Add Imagery<a class="headerlink" href="#add-imagery" title="Permalink to this headline"></a></h5>
-<p>Imagery datasets that will be used for this order are listed in this section. By clicking on the <span class="guilabel">Add Imagery</span> button in the <strong>Imagery Data</strong> section, users can add imagery data to the order by providing the following information:</p>
+<p>Order’s imagery datasets are listed in this section. By clicking on the <span class="guilabel">Add Imagery</span> button in the <strong>Imagery Data</strong> section, users can add imagery data to the order by providing the following information:</p>
 <blockquote>
 <div><ul>
 <li><p>Imagery Type:</p>
@@ -202,13 +203,13 @@
 </div></blockquote>
 </li>
 </ul>
-</div></blockquote>
-<figure class="align-center" id="id4">
+<figure class="align-center" id="id5">
 <img alt="AddStandardImagery" src="_images/AddStandardImagery.png" />
 <figcaption>
-<p><span class="caption-text"><em>Add Standard Imagery</em></span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Add Standard Imagery</em></span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
+</div></blockquote>
 <p>After the information is provided, click on <span class="guilabel">Submit</span>. The newly create imagery dataset will be listed in <strong>Imagery Data</strong> section. In the meantime, system will process the imagery automatically and run coverage check against the AOI.</p>
 </section>
 <section id="imagery-data-action">
@@ -225,20 +226,20 @@
 <section id="coverage-check">
 <h4><span class="section-number">1.2.1.3. </span>Coverage Check<a class="headerlink" href="#coverage-check" title="Permalink to this headline"></a></h4>
 <p>If the provided imagery failed to cover the entire provided AOI, the following notification will appear in the input data section.</p>
-<figure class="align-center" id="id5">
+<figure class="align-center" id="id6">
 <img alt="CoverageCheck" src="_images/CoverageCheck.png" />
 <figcaption>
-<p><span class="caption-text"><em>Coverage Check Notification</em></span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Coverage Check Notification</em></span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>The following actions are available to the users:</p>
 <ol class="arabic">
 <li><p>Users can click on <strong>Coverage Check Report</strong> to review the actual coverage and download shapefile for the missing coverage area;</p>
 <blockquote>
-<div><figure class="align-center" id="id6">
+<div><figure class="align-center" id="id7">
 <img alt="CoverageCheckReport" src="_images/CoverageCheckReport.png" />
 <figcaption>
-<p><span class="caption-text"><em>Coverage Check Report</em></span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Coverage Check Report</em></span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </div></blockquote>
@@ -252,19 +253,21 @@
 <h3><span class="section-number">1.2.2. </span>Extraction Settings<a class="headerlink" href="#extraction-settings" title="Permalink to this headline"></a></h3>
 <p>This space allows users to select desired features (Catetitle) to be extracted from the provided imagery.</p>
 <blockquote>
-<div><figure class="align-center" id="id7">
+<div><figure class="align-center" id="id8">
 <img alt="ExtractionSettings" src="_images/ExtractionSettings.png" />
 <figcaption>
-<p><span class="caption-text"><em>Extraction Settings</em></span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Extraction Settings</em></span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </div></blockquote>
-<ol class="arabic">
-<li><p>A list of standard product packages are listed on top of the catetitles. Users can select one or multiple and corresponding catetiles will be automatically selected in the catetitle list below.</p></li>
-<li><p>Select Catetitle: by clicking on the checkbox next to each Catetitle</p>
-<blockquote>
-<div><ul>
-<li><p>Catetitles are categorized into 4 different Categories:</p>
+<section id="product-packages">
+<h4><span class="section-number">1.2.2.1. </span>Product Packages<a class="headerlink" href="#product-packages" title="Permalink to this headline"></a></h4>
+<p>A list of standard product packages are listed on top of the catetitles. Users can select one or multiple and corresponding catetiles will be automatically selected in the catetitle list below.</p>
+</section>
+<section id="select-catetitle">
+<h4><span class="section-number">1.2.2.2. </span>Select Catetitle<a class="headerlink" href="#select-catetitle" title="Permalink to this headline"></a></h4>
+<p>Users can add catetitles to the extraction orders by clicking on the check box next to them.</p>
+<p>Catetitles are categorized into 4 different Categories:</p>
 <blockquote>
 <div><ul>
 <li><p><strong>Raster</strong>: include DSM and orthomosaic data generated through production pipeline</p></li>
@@ -279,40 +282,42 @@
 </li>
 </ul>
 </div></blockquote>
-</li>
-<li><p>For definition of each Catetitle, please refer to Glossary for more details.</p></li>
-</ul>
-</div></blockquote>
-</li>
-<li><p>Users can select the category in general or select second-tier categories to further differentiate the features</p>
+<p>Users can select the category in general or select second-tier categories to further differentiate the features.</p>
 <blockquote>
-<div><figure class="align-center" id="id8">
+<div><figure class="align-center" id="id9">
 <img alt="Second-Tier Categories" src="_images/SecondTier.png" />
 <figcaption>
-<p><span class="caption-text"><em>Example of Second-Tier Category</em></span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Example of Second-Tier Category</em></span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+<p>Selected Catetitles will be reflected in the <strong>Advanced settings for selected products</strong> section in the settings</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please refer to product specifications for more detailed explanation of the catetitles.</p>
+</div>
+</section>
+<section id="advanced-settings-for-selected-products">
+<h4><span class="section-number">1.2.2.3. </span>Advanced Settings For Selected Products<a class="headerlink" href="#advanced-settings-for-selected-products" title="Permalink to this headline"></a></h4>
+<p>In the <strong>Advanced settings for selected products</strong> section, users can modify the catetitle name in the delivery shapefile.</p>
+<blockquote>
+<div><ul>
+<li><p>Catetitle name in the delivery shapefile can be modified by clicking on the <img alt="Edit" src="_images/Edit.png" style="height: 30px;" /> button;</p></li>
+<li><p>Special capturing rules can be added through <img alt="advancesettings" src="_images/AdvanceSettings.png" style="height: 30px;" /> to provide production team with clear instructions.</p>
+<blockquote>
+<div><figure class="align-center" id="id10">
+<img alt="Catetitle Advanced Settings" src="_images/catetitleAdvancedSettings.png" />
+<figcaption>
+<p><span class="caption-text"><em>Catetitle Advanced Settings</em></span><a class="headerlink" href="#id10" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </div></blockquote>
 </li>
-<li><p>Selected Catetitles will be reflected in the <strong>Advanced settings for selected products</strong> section in the settings</p></li>
-<li><p>In the <strong>Advanced settings for selected products</strong> section, users can modify the catetitle name in the delivery shapefile.</p>
-<blockquote>
-<div><ul>
-<li><p>Catetitle name in the delivery shapefile can be modified by clicking on the edit button;</p></li>
-<li><p>Special capturing rules can be added to advance settings to provide production team with clear instructions.</p>
-<blockquote>
-<div><figure class="align-center">
-<img alt="Catetitle Advanced Settings" src="_images/catetitleAdvancedSettings.png" />
-</figure>
-<p><em>Catetitle Advanced Settings</em></p>
-</div></blockquote>
-</li>
 </ul>
 </div></blockquote>
-</li>
-<li><p>To help Ecopia team better understand the extraction requirements, users can attach supporting document in the <strong>Attached Document for Extraction Request</strong> section.</p></li>
-<li><p>Click on “Save &amp; Continue” to apply the changes and continue to Area of Interest.</p></li>
-</ol>
+<p>To help Ecopia team better understand the extraction requirements, users can attach supporting document in the <strong>Attached Document for Extraction Request</strong> section.</p>
+<p>Click on “Save &amp; Continue” to apply the changes and continue to <strong>Delivery Settings</strong>.</p>
+</section>
 </section>
 <section id="delivery-settings">
 <h3><span class="section-number">1.2.3. </span>Delivery Settings<a class="headerlink" href="#delivery-settings" title="Permalink to this headline"></a></h3>
@@ -339,10 +344,10 @@
 <section id="quote">
 <h4><span class="section-number">1.2.4.1. </span>Quote<a class="headerlink" href="#quote" title="Permalink to this headline"></a></h4>
 <p>User can obtain quote information by clicking on the <span class="guilabel">Quote</span> button. At this stage, the system is calculating the quote for the order based on the extraction settings and size of the AOI. The process will normally take a few minutes to complete.</p>
-<figure class="align-center" id="id9">
+<figure class="align-center" id="id11">
 <img alt="Calculating Quote" src="_images/CalculatingQuote.png" />
 <figcaption>
-<p><span class="caption-text"><em>Quote is being Calculated</em></span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Quote is being Calculated</em></span><a class="headerlink" href="#id11" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>The following information will be provided:</p>
@@ -365,10 +370,10 @@
 <section id="place-order">
 <h4><span class="section-number">1.2.4.2. </span>Place Order<a class="headerlink" href="#place-order" title="Permalink to this headline"></a></h4>
 <p>Once the quote is calculated, users can place order by clicking on the <span class="guilabel">Place Order</span>. After the order is placed, the production team will receive notification and the production process will be triggered.</p>
-<figure class="align-center" id="id10">
+<figure class="align-center" id="id12">
 <img alt="PayNow" src="_images/PlaceOrder.png" />
 <figcaption>
-<p><span class="caption-text"><em>Order is ready to be placed</em></span><a class="headerlink" href="#id10" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Order is ready to be placed</em></span><a class="headerlink" href="#id12" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -381,10 +386,10 @@
 <section id="action-delivery-delivery">
 <h2><span class="section-number">1.4. </span>Action: Delivery <img alt="Delivery" src="_images/Delivery.png" style="height: 30px;" /><a class="headerlink" href="#action-delivery-delivery" title="Permalink to this headline"></a></h2>
 <p>Email notification will be sent to order owner once the vector result is delivered. By clicking on the <img alt="Delivery" src="_images/Delivery.png" style="height: 30px;" /> button, users can view the deliveries and their path on the platform.</p>
-<figure class="align-center" id="id11">
+<figure class="align-center" id="id13">
 <img alt="DeliveryResult" src="_images/DeliveryResult.png" />
 <figcaption>
-<p><span class="caption-text"><em>Delivery Result Window</em></span><a class="headerlink" href="#id11" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Delivery Result Window</em></span><a class="headerlink" href="#id13" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>The following information is included:</p>
@@ -400,17 +405,13 @@
 <p>If a new vector result has been delivered, the delivery result window will display the corresponding information for the latest result.</p>
 </div>
 </section>
-<section id="action-review-review">
-<h2><span class="section-number">1.5. </span>Action: Review <img alt="Review" src="_images/Review.png" style="height: 30px;" /><a class="headerlink" href="#action-review-review" title="Permalink to this headline"></a></h2>
-<p>By clicking on the <img alt="Review" src="_images/Review.png" style="height: 30px;" /> button, the QC review project for the current delivery result will be opened in different page in QC tools. Users can perform regular QC review workflow then submit comment for production team to fix the comment accordingly.</p>
-</section>
 <section id="action-feedback-feedback">
-<h2><span class="section-number">1.6. </span>Action: Feedback <img alt="Feedback" src="_images/Feedback.png" style="height: 30px;" /><a class="headerlink" href="#action-feedback-feedback" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">1.5. </span>Action: Feedback <img alt="Feedback" src="_images/Feedback.png" style="height: 30px;" /><a class="headerlink" href="#action-feedback-feedback" title="Permalink to this headline"></a></h2>
 <p>Users can upload their offline comment in zipped shapefile format for production team to review and fix accordingly. Along with the zipped shapefile that contains comments, users can also provide writing description and imagery example for production team to better understand the issues.</p>
-<figure class="align-center" id="id12">
+<figure class="align-center" id="id14">
 <img alt="OfflineComments" src="_images/OfflineComments.png" />
 <figcaption>
-<p><span class="caption-text"><em>Upload Offline Comments</em></span><a class="headerlink" href="#id12" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Upload Offline Comments</em></span><a class="headerlink" href="#id14" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -420,14 +421,13 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to the Documentation for the Mapping Entry!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="ProjectProgress.html" class="btn btn-neutral float-right" title="2. Project Progress" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to the Documentation for the Mapping Oders!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2024, Ecopia Tech Corporation.</p>
+    <p>&#169; Copyright 2025, Ecopia Tech Corporation.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

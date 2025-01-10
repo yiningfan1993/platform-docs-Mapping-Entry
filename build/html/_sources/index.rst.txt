@@ -4,10 +4,10 @@
    contain the root `toctree` directive.
 
 #######################################################################
-Welcome to the Documentation for the Mapping Entry!
+Welcome to the Documentation for the Mapping Oders!
 #######################################################################
 
-The mapping entry provides a space where users can submit extraction order, assmble extraction workflow, and annotate the vector results.
+Mapping Orders provides a space where users can submit extraction order, receive and review vector results.
 
 
 
@@ -17,19 +17,8 @@ The mapping entry provides a space where users can submit extraction order, assm
    :caption: Components
 
    OrderList
-   ProjectProgress
-   AnnotationStage
-   QC
-   Annotator
-   UserProfile
-   Training
 
-.. toctree::
-   :numbered:
-   :maxdepth: 6
-   :caption: Other Functions
 
-   Quotation
 
 
 
