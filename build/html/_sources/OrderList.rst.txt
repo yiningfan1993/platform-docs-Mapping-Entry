@@ -22,7 +22,7 @@ The following information is contained in the order list table:
 Create Order
 ******************
 
-Users can start a new order by clicking on the |CreateOrder| button located on the top-right of the interface. 
+Users can start a new order by clicking on the :guilabel:`Create Order` button located on the top-right of the interface. 
 
 .. The following options will be available:
 
@@ -43,6 +43,8 @@ Click on "Submit" after setting the order name and provide corresponding opportu
 
 Action: Settings |ViewDetails|
 *************************************
+
+Order settings section allow users to modify the input data (AOI and imagery), requirements for feature extraction, and delivery settings.
 
 Users can view and edit details of the order by clicking on |ViewDetails| button in the action column. The order list page will jump to basic settings once a new order is created for users to provide more information about the order.
 
@@ -93,19 +95,19 @@ Add Imagery
 
 Order's imagery datasets are listed in this section. By clicking on the :guilabel:`Add Imagery` button in the **Imagery Data** section, users can add imagery data to the order by providing the following information:
 
-    * Imagery Type:
+    * **Imagery Type**:
 
-        * Single View: single view imagery for 2D feature extraction
-        * Multi View: multi-view imagery for 3D production
+        * **Single View**: single view imagery for 2D feature extraction
+        * **Multi View**: multi-view imagery for 3D production
 
-    * Location: 
+    * **Location**: 
 
-        * Local Drive: upload by drag-and-drop or navigate to the location of the file on local machine
-        * Cloud Service: S3 bucket that store the imagery data or through partnered imagery provider
+        * **Local Drive**: upload by drag-and-drop or navigate to the location of the file on local machine
+        * **Cloud Service**: S3 bucket that store the imagery data or through partnered imagery provider
 
-            * Own S3: customers own S3 path with corresponding access key and secret access key
-            * Ecopia S3: system generated Ecopia S3 bucket paired with access key and secret access key for users to upload imagery datasets to designated S3 buckets
-            * Imagery Provider: download imagery through imagery provider by providing resolution (mandatory) and vintage (not mandatory).
+            * **Own S3**: customers own S3 path with corresponding access key and secret access key
+            * **Ecopia S3**: system generated Ecopia S3 bucket paired with access key and secret access key for users to upload imagery datasets to designated S3 buckets
+            * **Imagery Provider**: download imagery through imagery provider by providing resolution (mandatory) and vintage (not mandatory).
     
 
     .. figure:: /images/AddStandardImagery.png
@@ -154,6 +156,8 @@ Extraction Settings
 
 This space allows users to select desired features (Catetitle) to be extracted from the provided imagery.
 
+Users can select based on product packages or select catetitles individually. Advanced settings and other supporting documents can also be specified and uploaded for production team to better understand the extraction request.
+
  .. figure:: /images/ExtractionSettings.png
     :align: center
     :alt: ExtractionSettings
@@ -161,14 +165,23 @@ This space allows users to select desired features (Catetitle) to be extracted f
 
     *Extraction Settings*
 
-Product Packages
+Production Selection
 ----------------------
+
+Select by Packages
++++++++++++++++++++++
 A list of standard product packages are listed on top of the catetitles. Users can select one or multiple and corresponding catetiles will be automatically selected in the catetitle list below.
 
+ .. figure:: /images/ProductPackage.png
+    :align: center
+    :alt: ProductPackage
+    
 
-Select Catetitle
-------------------------
-Users can add catetitles to the extraction orders by clicking on the check box next to them.
+    *Product Package*
+
+Select by Individual Catetitle
+++++++++++++++++++++++++++++++++
+Users can add catetitles to the extraction orders by clicking on the check boxes next to them.
 
 Catetitles are categorized into 4 different Categories:
 
@@ -193,8 +206,9 @@ Selected Catetitles will be reflected in the **Advanced settings for selected pr
 .. note:: 
     Please refer to product specifications for more detailed explanation of the catetitles.
 
+
 Advanced Settings For Selected Products
-----------------------------------------------
+++++++++++++++++++++++++++++++++++++++++++
 
 In the **Advanced settings for selected products** section, users can modify the catetitle name in the delivery shapefile.
     
@@ -217,7 +231,8 @@ Click on "Save & Continue" to apply the changes and continue to **Delivery Setti
 
 
 
-
+Documents for Extraction Request
+----------------------------------
 
 
 
@@ -233,7 +248,7 @@ Users can define how the data should be delivered by providing the following inf
     * WGS84
     * WGS84/UTM
     * OTHER
-    * Provide EPSG and added as an option
+    * Users provided EPSG code in the blank space and added as an option
 
 #. **Delivery Format**: data format that the vector result will be delivered in
 #. **Deliver Grid Size**: grid can be applied to the vector result to split larger polygon into smaller pieces. 
@@ -295,7 +310,7 @@ Email notification will be sent to order owner once the vector result is deliver
 The following information is included:
 
 #. **Delivery Method**: pre-defined delivery method
-#. **Platform Link**: users can navigate to the file's platform location by clicking on the link. Users can also choose to click on the :guilabel:`Download Result` button to download the file to local machine
+#. **Platform Link**: users can navigate to the file's platform location by clicking on the link. Users can also choose to click on the |downloadresult| button to download the file to local machine
 #. **Raster WMTS URL**: URL to raster dataset in WMTS format
 #. **Raster WMTS Expiration**: date and time that the raster WMTS will be expired
 #. **Vector WMTS URL**: URL to vector results in WMTS format
@@ -329,7 +344,7 @@ Users can upload their offline comment in zipped shapefile format for production
     :height: 21
 
 .. |ViewDetails| image:: /images/ViewDetails.png
-    :height: 21
+    :height: 30
 
 .. |binddataset| image:: /images/binddataset.png
     :height: 21
@@ -365,4 +380,7 @@ Users can upload their offline comment in zipped shapefile format for production
       :height: 30
 
 .. |advancesettings| image:: /images/AdvanceSettings.png
+      :height: 30
+
+.. |downloadresult| image:: /images/downloadresult.png
       :height: 30

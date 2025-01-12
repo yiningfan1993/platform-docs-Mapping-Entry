@@ -63,9 +63,13 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#extraction-settings">1.2.2. Extraction Settings</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#product-packages">1.2.2.1. Product Packages</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#select-catetitle">1.2.2.2. Select Catetitle</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#advanced-settings-for-selected-products">1.2.2.3. Advanced Settings For Selected Products</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#production-selection">1.2.2.1. Production Selection</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#select-by-packages">1.2.2.1.1. Select by Packages</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#select-by-individual-catetitle">1.2.2.1.2. Select by Individual Catetitle</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#advanced-settings-for-selected-products">1.2.2.1.3. Advanced Settings For Selected Products</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#documents-for-extraction-request">1.2.2.2. Documents for Extraction Request</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#delivery-settings">1.2.3. Delivery Settings</a></li>
@@ -130,8 +134,8 @@
 </div></blockquote>
 <section id="create-order">
 <h2><span class="section-number">1.1. </span>Create Order<a class="headerlink" href="#create-order" title="Permalink to this headline"></a></h2>
-<p>Users can start a new order by clicking on the <img alt="CreateOrder" src="_images/CreateOrder.png" style="height: 21px;" /> button located on the top-right of the interface.</p>
-<p>Click on “Submit” after setting the order name and provide corresponding opportunity ID from Salesforce, the order list page will jump to basic settings page for users to provide more detailed information. The settings page can also be opened by clicking <img alt="ViewDetails" src="_images/ViewDetails.png" style="height: 21px;" /> in the action column of each order.</p>
+<p>Users can start a new order by clicking on the <span class="guilabel">Create Order</span> button located on the top-right of the interface.</p>
+<p>Click on “Submit” after setting the order name and provide corresponding opportunity ID from Salesforce, the order list page will jump to basic settings page for users to provide more detailed information. The settings page can also be opened by clicking <img alt="ViewDetails" src="_images/ViewDetails.png" style="height: 30px;" /> in the action column of each order.</p>
 <blockquote>
 <div><figure class="align-center" id="id2">
 <img alt="CreateOrder" src="_images/CreateOrder.png" />
@@ -142,8 +146,9 @@
 </div></blockquote>
 </section>
 <section id="action-settings-viewdetails">
-<h2><span class="section-number">1.2. </span>Action: Settings <img alt="ViewDetails" src="_images/ViewDetails.png" style="height: 21px;" /><a class="headerlink" href="#action-settings-viewdetails" title="Permalink to this headline"></a></h2>
-<p>Users can view and edit details of the order by clicking on <img alt="ViewDetails" src="_images/ViewDetails.png" style="height: 21px;" /> button in the action column. The order list page will jump to basic settings once a new order is created for users to provide more information about the order.</p>
+<h2><span class="section-number">1.2. </span>Action: Settings <img alt="ViewDetails" src="_images/ViewDetails.png" style="height: 30px;" /><a class="headerlink" href="#action-settings-viewdetails" title="Permalink to this headline"></a></h2>
+<p>Order settings section allow users to modify the input data (AOI and imagery), requirements for feature extraction, and delivery settings.</p>
+<p>Users can view and edit details of the order by clicking on <img alt="ViewDetails" src="_images/ViewDetails.png" style="height: 30px;" /> button in the action column. The order list page will jump to basic settings once a new order is created for users to provide more information about the order.</p>
 <section id="input-data">
 <h3><span class="section-number">1.2.1. </span>Input Data<a class="headerlink" href="#input-data" title="Permalink to this headline"></a></h3>
 <p>This page contains setting information for order’s AOI and corresponding imagery data that will be used for production.</p>
@@ -189,24 +194,24 @@
 <p>Order’s imagery datasets are listed in this section. By clicking on the <span class="guilabel">Add Imagery</span> button in the <strong>Imagery Data</strong> section, users can add imagery data to the order by providing the following information:</p>
 <blockquote>
 <div><ul>
-<li><p>Imagery Type:</p>
+<li><p><strong>Imagery Type</strong>:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>Single View: single view imagery for 2D feature extraction</p></li>
-<li><p>Multi View: multi-view imagery for 3D production</p></li>
+<li><p><strong>Single View</strong>: single view imagery for 2D feature extraction</p></li>
+<li><p><strong>Multi View</strong>: multi-view imagery for 3D production</p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p>Location:</p>
+<li><p><strong>Location</strong>:</p>
 <blockquote>
 <div><ul>
-<li><p>Local Drive: upload by drag-and-drop or navigate to the location of the file on local machine</p></li>
-<li><p>Cloud Service: S3 bucket that store the imagery data or through partnered imagery provider</p>
+<li><p><strong>Local Drive</strong>: upload by drag-and-drop or navigate to the location of the file on local machine</p></li>
+<li><p><strong>Cloud Service</strong>: S3 bucket that store the imagery data or through partnered imagery provider</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>Own S3: customers own S3 path with corresponding access key and secret access key</p></li>
-<li><p>Ecopia S3: system generated Ecopia S3 bucket paired with access key and secret access key for users to upload imagery datasets to designated S3 buckets</p></li>
-<li><p>Imagery Provider: download imagery through imagery provider by providing resolution (mandatory) and vintage (not mandatory).</p></li>
+<li><p><strong>Own S3</strong>: customers own S3 path with corresponding access key and secret access key</p></li>
+<li><p><strong>Ecopia S3</strong>: system generated Ecopia S3 bucket paired with access key and secret access key for users to upload imagery datasets to designated S3 buckets</p></li>
+<li><p><strong>Imagery Provider</strong>: download imagery through imagery provider by providing resolution (mandatory) and vintage (not mandatory).</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -263,6 +268,7 @@
 <section id="extraction-settings">
 <h3><span class="section-number">1.2.2. </span>Extraction Settings<a class="headerlink" href="#extraction-settings" title="Permalink to this headline"></a></h3>
 <p>This space allows users to select desired features (Catetitle) to be extracted from the provided imagery.</p>
+<p>Users can select based on product packages or select catetitles individually. Advanced settings and other supporting documents can also be specified and uploaded for production team to better understand the extraction request.</p>
 <blockquote>
 <div><figure class="align-center" id="id8">
 <img alt="ExtractionSettings" src="_images/ExtractionSettings.png" />
@@ -271,13 +277,23 @@
 </figcaption>
 </figure>
 </div></blockquote>
-<section id="product-packages">
-<h4><span class="section-number">1.2.2.1. </span>Product Packages<a class="headerlink" href="#product-packages" title="Permalink to this headline"></a></h4>
+<section id="production-selection">
+<h4><span class="section-number">1.2.2.1. </span>Production Selection<a class="headerlink" href="#production-selection" title="Permalink to this headline"></a></h4>
+<section id="select-by-packages">
+<h5><span class="section-number">1.2.2.1.1. </span>Select by Packages<a class="headerlink" href="#select-by-packages" title="Permalink to this headline"></a></h5>
 <p>A list of standard product packages are listed on top of the catetitles. Users can select one or multiple and corresponding catetiles will be automatically selected in the catetitle list below.</p>
+<blockquote>
+<div><figure class="align-center" id="id9">
+<img alt="ProductPackage" src="_images/ProductPackage.png" />
+<figcaption>
+<p><span class="caption-text"><em>Product Package</em></span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
 </section>
-<section id="select-catetitle">
-<h4><span class="section-number">1.2.2.2. </span>Select Catetitle<a class="headerlink" href="#select-catetitle" title="Permalink to this headline"></a></h4>
-<p>Users can add catetitles to the extraction orders by clicking on the check box next to them.</p>
+<section id="select-by-individual-catetitle">
+<h5><span class="section-number">1.2.2.1.2. </span>Select by Individual Catetitle<a class="headerlink" href="#select-by-individual-catetitle" title="Permalink to this headline"></a></h5>
+<p>Users can add catetitles to the extraction orders by clicking on the check boxes next to them.</p>
 <p>Catetitles are categorized into 4 different Categories:</p>
 <blockquote>
 <div><ul>
@@ -295,10 +311,10 @@
 </div></blockquote>
 <p>Users can select the category in general or select second-tier categories to further differentiate the features.</p>
 <blockquote>
-<div><figure class="align-center" id="id9">
+<div><figure class="align-center" id="id10">
 <img alt="Second-Tier Categories" src="_images/SecondTier.png" />
 <figcaption>
-<p><span class="caption-text"><em>Example of Second-Tier Category</em></span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Example of Second-Tier Category</em></span><a class="headerlink" href="#id10" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </div></blockquote>
@@ -309,17 +325,17 @@
 </div>
 </section>
 <section id="advanced-settings-for-selected-products">
-<h4><span class="section-number">1.2.2.3. </span>Advanced Settings For Selected Products<a class="headerlink" href="#advanced-settings-for-selected-products" title="Permalink to this headline"></a></h4>
+<h5><span class="section-number">1.2.2.1.3. </span>Advanced Settings For Selected Products<a class="headerlink" href="#advanced-settings-for-selected-products" title="Permalink to this headline"></a></h5>
 <p>In the <strong>Advanced settings for selected products</strong> section, users can modify the catetitle name in the delivery shapefile.</p>
 <blockquote>
 <div><ul>
 <li><p>Catetitle name in the delivery shapefile can be modified by clicking on the <img alt="Edit" src="_images/Edit.png" style="height: 30px;" /> button, click on <span class="guilabel">Save</span> to save the changes;</p></li>
 <li><p>Special capturing rules can be added through <img alt="advancesettings" src="_images/AdvanceSettings.png" style="height: 30px;" /> to provide production team with clear instructions, click on <span class="guilabel">Update</span> to save provided information.</p>
 <blockquote>
-<div><figure class="align-center" id="id10">
+<div><figure class="align-center" id="id11">
 <img alt="Catetitle Advanced Settings" src="_images/catetitleAdvancedSettings.png" />
 <figcaption>
-<p><span class="caption-text"><em>Catetitle Advanced Settings</em></span><a class="headerlink" href="#id10" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Catetitle Advanced Settings</em></span><a class="headerlink" href="#id11" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </div></blockquote>
@@ -329,6 +345,10 @@
 </div></blockquote>
 <p>To help production team better understand the extraction requirements, users can also attach supporting document in the <strong>Attached Document for Extraction Request</strong> section.</p>
 <p>Click on “Save &amp; Continue” to apply the changes and continue to <strong>Delivery Settings</strong>.</p>
+</section>
+</section>
+<section id="documents-for-extraction-request">
+<h4><span class="section-number">1.2.2.2. </span>Documents for Extraction Request<a class="headerlink" href="#documents-for-extraction-request" title="Permalink to this headline"></a></h4>
 </section>
 </section>
 <section id="delivery-settings">
@@ -341,7 +361,7 @@
 <li><p>WGS84</p></li>
 <li><p>WGS84/UTM</p></li>
 <li><p>OTHER</p></li>
-<li><p>Provide EPSG and added as an option</p></li>
+<li><p>Users provided EPSG code in the blank space and added as an option</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -356,10 +376,10 @@
 <section id="quote">
 <h4><span class="section-number">1.2.4.1. </span>Quote<a class="headerlink" href="#quote" title="Permalink to this headline"></a></h4>
 <p>User can obtain quote information by clicking on the <span class="guilabel">Quote</span> button. At this stage, the system is calculating the quote for the order based on the extraction settings and size of the AOI. The process will normally take a few minutes to complete.</p>
-<figure class="align-center" id="id11">
+<figure class="align-center" id="id12">
 <img alt="Calculating Quote" src="_images/CalculatingQuote.png" />
 <figcaption>
-<p><span class="caption-text"><em>Quote is being Calculated</em></span><a class="headerlink" href="#id11" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Quote is being Calculated</em></span><a class="headerlink" href="#id12" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>The following information will be provided:</p>
@@ -382,10 +402,10 @@
 <section id="place-order">
 <h4><span class="section-number">1.2.4.2. </span>Place Order<a class="headerlink" href="#place-order" title="Permalink to this headline"></a></h4>
 <p>Once the quote is calculated, users can place order by clicking on the <span class="guilabel">Place Order</span>. After the order is placed, the production team will receive notification and the production process will be triggered.</p>
-<figure class="align-center" id="id12">
+<figure class="align-center" id="id13">
 <img alt="PayNow" src="_images/PlaceOrder.png" />
 <figcaption>
-<p><span class="caption-text"><em>Order is ready to be placed</em></span><a class="headerlink" href="#id12" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Order is ready to be placed</em></span><a class="headerlink" href="#id13" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -398,16 +418,16 @@
 <section id="action-delivery-delivery">
 <h2><span class="section-number">1.4. </span>Action: Delivery <img alt="Delivery" src="_images/Delivery.png" style="height: 30px;" /><a class="headerlink" href="#action-delivery-delivery" title="Permalink to this headline"></a></h2>
 <p>Email notification will be sent to order owner once the vector result is delivered. By clicking on the <img alt="Delivery" src="_images/Delivery.png" style="height: 30px;" /> button, users can view the deliveries and their path on the platform.</p>
-<figure class="align-center" id="id13">
+<figure class="align-center" id="id14">
 <img alt="DeliveryResult" src="_images/DeliveryResult.png" />
 <figcaption>
-<p><span class="caption-text"><em>Delivery Result Window</em></span><a class="headerlink" href="#id13" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Delivery Result Window</em></span><a class="headerlink" href="#id14" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>The following information is included:</p>
 <ol class="arabic simple">
 <li><p><strong>Delivery Method</strong>: pre-defined delivery method</p></li>
-<li><p><strong>Platform Link</strong>: users can navigate to the file’s platform location by clicking on the link. Users can also choose to click on the <span class="guilabel">Download Result</span> button to download the file to local machine</p></li>
+<li><p><strong>Platform Link</strong>: users can navigate to the file’s platform location by clicking on the link. Users can also choose to click on the <img alt="downloadresult" src="images/downloadresult.png" style="height: 30px;" /> button to download the file to local machine</p></li>
 <li><p><strong>Raster WMTS URL</strong>: URL to raster dataset in WMTS format</p></li>
 <li><p><strong>Raster WMTS Expiration</strong>: date and time that the raster WMTS will be expired</p></li>
 <li><p><strong>Vector WMTS URL</strong>: URL to vector results in WMTS format</p></li>
@@ -420,10 +440,10 @@
 <section id="action-feedback-feedback">
 <h2><span class="section-number">1.5. </span>Action: Feedback <img alt="Feedback" src="_images/Feedback.png" style="height: 30px;" /><a class="headerlink" href="#action-feedback-feedback" title="Permalink to this headline"></a></h2>
 <p>Users can upload their offline comment in zipped shapefile format for production team to review and fix accordingly. Along with the zipped shapefile that contains comments, users can also provide writing description and imagery example for production team to better understand the issues.</p>
-<figure class="align-center" id="id14">
+<figure class="align-center" id="id15">
 <img alt="OfflineComments" src="_images/OfflineComments.png" />
 <figcaption>
-<p><span class="caption-text"><em>Upload Offline Comments</em></span><a class="headerlink" href="#id14" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Upload Offline Comments</em></span><a class="headerlink" href="#id15" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
