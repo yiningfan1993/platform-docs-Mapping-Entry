@@ -50,6 +50,7 @@ Click on "Submit" after setting the order name and provide corresponding opportu
 
  .. figure:: /images/CreateOrder.png
     :align: center
+    :height: 240
     :alt: CreateOrder
 
     *Create Order*
@@ -84,18 +85,22 @@ This tab contains setting information for order's AOI and corresponding imagery 
 AOI Data
 ------------------
 
-#. Add AOI Data
+**1. Add AOI Data**
 
     By clicking :guilabel:`Add AOI` button on the top right corner, users can upload the AOI file from local machine or through S3 buckets. Once uploaded, the AOI will be listed under **AOI Data** section of the page.
 
     .. figure:: /images/AddAOILocalDrive.png
         :align: center
+        :height: 300
         :alt: AddAOILocalDrive
 
         *Add AOI via Local Drive*
 
+|
+
     .. figure:: /images/AddAOIS3.png
         :align: center
+        :height: 300
         :alt: AddAOIS3
 
         *Add AOI via S3*
@@ -104,20 +109,19 @@ AOI Data
         The AOI file needs to be in zipped shapefile format and smaller than 4 MB.
 
 
-#. AOI Actions
+**2. AOI Actions**
 
 
     The following actions are available for uploaded AOI files.
 
-
-        #. Preview AOI |PreviewAOI|: By clicking |PreviewAOI| button, users can review the uploaded AOI file overlay with Google Maps.
-        #. Remove AOI |DeleteAOI|: AOI will be removed once click on the |DeleteAOI| button.
+    #. Preview AOI |PreviewAOI|: By clicking |PreviewAOI| button, users can review the uploaded AOI file overlay with Google Maps.
+    #. Remove AOI |DeleteAOI|: AOI will be removed once click on the |DeleteAOI| button.
 
 
 Imagery Data
 ----------------------------
 
-#. Add Imagery
+**1. Add Imagery**
 
 
     Order's imagery datasets are listed in this section. By clicking on the :guilabel:`Add Imagery` button in the **Imagery Data** section, users can add imagery data to the order by providing the following information:
@@ -145,7 +149,7 @@ Imagery Data
 
     After the information is provided, click on :guilabel:`Submit`. The newly create imagery dataset will be listed in **Imagery Data** section. In the meantime, system will process the imagery automatically and run coverage check against the AOI. 
 
-#. Imagery Data Action
+**2. Imagery Data Action**
 
 
     The following actions are available for uploaded imagery datasets:
@@ -177,6 +181,7 @@ The following actions are available to the users:
 #. After the users adjusted the content in the S3 path to provide more coverage, they can choose to :guilabel:`Validate Again` to see if the adjusted content fully covers the AOI;
 #. Users can also choose to :guilabel:`Ignore Missing Area` if the missing area is not crucial to the project. 
 
+Click on :guilabel:`Save & Continue` to save the input data settings and continue to extraction settings.
 
 Extraction Settings
 ====================
@@ -264,17 +269,33 @@ Production Selection
         *Advanced Settings for Selected Catetitles*
 
         
-        * Catetitle name in the delivery shapefile can be modified by clicking on the |Edit| button, click on :guilabel:`Save` to save the changes;
-        * Special capturing rules can be added through |advancesettings| to provide production team with clear instructions, click on :guilabel:`Update` to save provided information.
+    * **Change Catetitle Name**: Catetitle name in the delivery shapefile can be modified by clicking on the |Edit| button, click on :guilabel:`Save` to save the changes;
+    * **Special Capturing Rules**: Special capturing rules can be added through |advancesettings| to provide production team with clear instructions, click on :guilabel:`Update` to save provided information. The following information needs to be provided.
 
+            * Category: name of the corresponding catetitle;
+            * Geometry type: type of the geometry of the corresponding catetitle;
+            * Definition: project definition of the catetitle if it is different from the standard Ecopia specifications;
+            * File Upload: imagery example of the provided definition or annotate rule, which can assist production team to better understand the extraction requirements;
+            * Annotate Rules: methods of drawing and capturing if different from Ecopia standard specifications.
 
+            |
             .. figure:: /images/catetitleAdvancedSettings.png
                 :alt: Catetitle Advanced Settings
                 :align: center
 
                 *Catetitle Advanced Settings*
 
-        * Users can also dictate whether overlapping is allowed. Users can also adjust the order of overlapping by re-arranging the order of catetitles.
+            
+            |
+    * **Overlapping Rules**: Users can also dictate whether overlapping is allowed. Users can also adjust the order of overlapping by re-arranging the order of catetitles.
+
+            |
+            .. figure:: /images/AdjustPriority.gif
+                :alt: AdjustPriorty
+                :align: center
+
+                *Adjust Overlapping Priority*            
+
 
 
 Documents for Extraction Request
@@ -290,7 +311,7 @@ To help production team better understand the extraction requirements, users can
     *Documents for Extraction Request*
 
 
-Click on "Save & Continue" to apply the changes and continue to **Delivery Settings**.
+Click on :guilabel:`Save & Continue` to apply the changes and continue to **Delivery Settings**.
 
 
 

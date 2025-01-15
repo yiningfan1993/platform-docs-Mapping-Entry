@@ -139,7 +139,7 @@
 <p>Click on “Submit” after setting the order name and provide corresponding opportunity ID from Salesforce, the order list page will jump to basic settings page for users to provide more detailed information. The settings page can also be opened by clicking <img alt="ViewDetails" src="_images/ViewDetails.png" style="height: 30px;" /> in the action column of each order.</p>
 <blockquote>
 <div><figure class="align-center" id="id2">
-<img alt="CreateOrder" src="_images/CreateOrder.png" />
+<img alt="CreateOrder" src="_images/CreateOrder.png" style="height: 240px;" />
 <figcaption>
 <p><span class="caption-text"><em>Create Order</em></span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
 </figcaption>
@@ -172,18 +172,22 @@
 <p>This tab contains setting information for order’s AOI and corresponding imagery data that will be used for production.</p>
 <section id="aoi-data">
 <h4><span class="section-number">1.2.1.1. </span>AOI Data<a class="headerlink" href="#aoi-data" title="Permalink to this headline"></a></h4>
-<ol class="arabic">
-<li><p>Add AOI Data</p>
+<p><strong>1. Add AOI Data</strong></p>
 <blockquote>
 <div><p>By clicking <span class="guilabel">Add AOI</span> button on the top right corner, users can upload the AOI file from local machine or through S3 buckets. Once uploaded, the AOI will be listed under <strong>AOI Data</strong> section of the page.</p>
 <figure class="align-center" id="id4">
-<img alt="AddAOILocalDrive" src="_images/AddAOILocalDrive.png" />
+<img alt="AddAOILocalDrive" src="_images/AddAOILocalDrive.png" style="height: 300px;" />
 <figcaption>
 <p><span class="caption-text"><em>Add AOI via Local Drive</em></span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id5">
-<img alt="AddAOIS3" src="_images/AddAOIS3.png" />
+</div></blockquote>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote>
+<div><figure class="align-center" id="id5">
+<img alt="AddAOIS3" src="_images/AddAOIS3.png" style="height: 300px;" />
 <figcaption>
 <p><span class="caption-text"><em>Add AOI via S3</em></span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
 </figcaption>
@@ -193,24 +197,18 @@
 <p>The AOI file needs to be in zipped shapefile format and smaller than 4 MB.</p>
 </div>
 </div></blockquote>
-</li>
-<li><p>AOI Actions</p>
+<p><strong>2. AOI Actions</strong></p>
 <blockquote>
 <div><p>The following actions are available for uploaded AOI files.</p>
-<blockquote>
-<div><ol class="arabic simple">
+<ol class="arabic simple">
 <li><p>Preview AOI <img alt="PreviewAOI" src="_images/PreviewAOI.png" style="height: 25px;" />: By clicking <img alt="PreviewAOI" src="_images/PreviewAOI.png" style="height: 25px;" /> button, users can review the uploaded AOI file overlay with Google Maps.</p></li>
 <li><p>Remove AOI <img alt="DeleteAOI" src="_images/DeleteAOI.png" style="height: 32px;" />: AOI will be removed once click on the <img alt="DeleteAOI" src="_images/DeleteAOI.png" style="height: 32px;" /> button.</p></li>
 </ol>
 </div></blockquote>
-</div></blockquote>
-</li>
-</ol>
 </section>
 <section id="imagery-data">
 <h4><span class="section-number">1.2.1.2. </span>Imagery Data<a class="headerlink" href="#imagery-data" title="Permalink to this headline"></a></h4>
-<ol class="arabic">
-<li><p>Add Imagery</p>
+<p><strong>1. Add Imagery</strong></p>
 <blockquote>
 <div><p>Order’s imagery datasets are listed in this section. By clicking on the <span class="guilabel">Add Imagery</span> button in the <strong>Imagery Data</strong> section, users can add imagery data to the order by providing the following information:</p>
 <blockquote>
@@ -249,8 +247,7 @@
 </div></blockquote>
 <p>After the information is provided, click on <span class="guilabel">Submit</span>. The newly create imagery dataset will be listed in <strong>Imagery Data</strong> section. In the meantime, system will process the imagery automatically and run coverage check against the AOI.</p>
 </div></blockquote>
-</li>
-<li><p>Imagery Data Action</p>
+<p><strong>2. Imagery Data Action</strong></p>
 <blockquote>
 <div><p>The following actions are available for uploaded imagery datasets:</p>
 <blockquote>
@@ -260,8 +257,6 @@
 </ol>
 </div></blockquote>
 </div></blockquote>
-</li>
-</ol>
 </section>
 <section id="coverage-check">
 <h4><span class="section-number">1.2.1.3. </span>Coverage Check<a class="headerlink" href="#coverage-check" title="Permalink to this headline"></a></h4>
@@ -287,6 +282,7 @@
 <li><p>After the users adjusted the content in the S3 path to provide more coverage, they can choose to <span class="guilabel">Validate Again</span> to see if the adjusted content fully covers the AOI;</p></li>
 <li><p>Users can also choose to <span class="guilabel">Ignore Missing Area</span> if the missing area is not crucial to the project.</p></li>
 </ol>
+<p>Click on <span class="guilabel">Save &amp; Continue</span> to save the input data settings and continue to extraction settings.</p>
 </section>
 </section>
 <section id="extraction-settings">
@@ -357,38 +353,61 @@
 <img alt="OpenAdvancedSettings" src="_images/OpenAdvancedSettings.gif" />
 <figcaption>
 <p><span class="caption-text"><em>Advanced Settings for Selected Catetitles</em></span><a class="headerlink" href="#id13" title="Permalink to this image"></a></p>
-<div class="legend">
+</figcaption>
+</figure>
 <ul>
-<li><p>Catetitle name in the delivery shapefile can be modified by clicking on the <img alt="Edit" src="_images/Edit.png" style="height: 30px;" /> button, click on <span class="guilabel">Save</span> to save the changes;</p></li>
-<li><p>Special capturing rules can be added through <img alt="advancesettings" src="_images/AdvanceSettings.png" style="height: 30px;" /> to provide production team with clear instructions, click on <span class="guilabel">Update</span> to save provided information.</p>
+<li><p><strong>Change Catetitle Name</strong>: Catetitle name in the delivery shapefile can be modified by clicking on the <img alt="Edit" src="_images/Edit.png" style="height: 30px;" /> button, click on <span class="guilabel">Save</span> to save the changes;</p></li>
+<li><p><strong>Special Capturing Rules</strong>: Special capturing rules can be added through <img alt="advancesettings" src="_images/AdvanceSettings.png" style="height: 30px;" /> to provide production team with clear instructions, click on <span class="guilabel">Update</span> to save provided information. The following information needs to be provided.</p>
 <blockquote>
-<div><figure class="align-center" id="id14">
+<div><ul class="simple">
+<li><p>Category: name of the corresponding catetitle;</p></li>
+<li><p>Geometry type: type of the geometry of the corresponding catetitle;</p></li>
+<li><p>Definition: project definition of the catetitle if it is different from the standard Ecopia specifications;</p></li>
+<li><p>File Upload: imagery example of the provided definition or annotate rule, which can assist production team to better understand the extraction requirements;</p></li>
+<li><p>Annotate Rules: methods of drawing and capturing if different from Ecopia standard specifications.</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<figure class="align-center" id="id14">
 <img alt="Catetitle Advanced Settings" src="_images/catetitleAdvancedSettings.png" />
 <figcaption>
 <p><span class="caption-text"><em>Catetitle Advanced Settings</em></span><a class="headerlink" href="#id14" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </div></blockquote>
 </li>
-<li><p>Users can also dictate whether overlapping is allowed. Users can also adjust the order of overlapping by re-arranging the order of catetitles.</p></li>
-</ul>
+<li><p><strong>Overlapping Rules</strong>: Users can also dictate whether overlapping is allowed. Users can also adjust the order of overlapping by re-arranging the order of catetitles.</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line"><br /></div>
 </div>
+<figure class="align-center" id="id15">
+<img alt="AdjustPriorty" src="_images/AdjustPriority.gif" />
+<figcaption>
+<p><span class="caption-text"><em>Adjust Overlapping Priority</em></span><a class="headerlink" href="#id15" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
+</div></blockquote>
+</li>
+</ul>
 </div></blockquote>
 </section>
 <section id="documents-for-extraction-request">
 <h4><span class="section-number">1.2.2.2. </span>Documents for Extraction Request<a class="headerlink" href="#documents-for-extraction-request" title="Permalink to this headline"></a></h4>
 <p>To help production team better understand the extraction requirements, users can also attach supporting document in the <strong>Attached Document for Extraction Request</strong> section.</p>
 <blockquote>
-<div><figure class="align-center" id="id15">
+<div><figure class="align-center" id="id16">
 <img alt="Documents" src="_images/Documents.png" />
 <figcaption>
-<p><span class="caption-text"><em>Documents for Extraction Request</em></span><a class="headerlink" href="#id15" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Documents for Extraction Request</em></span><a class="headerlink" href="#id16" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </div></blockquote>
-<p>Click on “Save &amp; Continue” to apply the changes and continue to <strong>Delivery Settings</strong>.</p>
+<p>Click on <span class="guilabel">Save &amp; Continue</span> to apply the changes and continue to <strong>Delivery Settings</strong>.</p>
 </section>
 </section>
 <section id="delivery-settings">
@@ -416,10 +435,10 @@
 <section id="quote">
 <h4><span class="section-number">1.2.4.1. </span>Quote<a class="headerlink" href="#quote" title="Permalink to this headline"></a></h4>
 <p>User can obtain quote information by clicking on the <span class="guilabel">Quote</span> button. At this stage, the system is calculating the quote for the order based on the extraction settings and size of the AOI. The process will normally take a few minutes to complete.</p>
-<figure class="align-center" id="id16">
+<figure class="align-center" id="id17">
 <img alt="Calculating Quote" src="_images/CalculatingQuote.png" />
 <figcaption>
-<p><span class="caption-text"><em>Quote is being Calculated</em></span><a class="headerlink" href="#id16" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Quote is being Calculated</em></span><a class="headerlink" href="#id17" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>The following information will be provided:</p>
@@ -444,10 +463,10 @@
 <section id="place-order">
 <h4><span class="section-number">1.2.4.2. </span>Place Order<a class="headerlink" href="#place-order" title="Permalink to this headline"></a></h4>
 <p>Once the quote is calculated, users can place order by clicking on the <span class="guilabel">Place Order</span>. After the order is placed, the production team will receive notification and the production process will be triggered.</p>
-<figure class="align-center" id="id17">
+<figure class="align-center" id="id18">
 <img alt="PayNow" src="_images/PlaceOrder.png" />
 <figcaption>
-<p><span class="caption-text"><em>Order is ready to be placed</em></span><a class="headerlink" href="#id17" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Order is ready to be placed</em></span><a class="headerlink" href="#id18" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -460,16 +479,16 @@
 <section id="action-delivery-delivery">
 <h2><span class="section-number">1.4. </span>Action: Delivery <img alt="Delivery" src="_images/Delivery.png" style="height: 30px;" /><a class="headerlink" href="#action-delivery-delivery" title="Permalink to this headline"></a></h2>
 <p>Email notification will be sent to order owner once the vector result is delivered. By clicking on the <img alt="Delivery" src="_images/Delivery.png" style="height: 30px;" /> button, users can view the deliveries and their path on the platform.</p>
-<figure class="align-center" id="id18">
+<figure class="align-center" id="id19">
 <img alt="DeliveryResult" src="_images/DeliveryResult.png" />
 <figcaption>
-<p><span class="caption-text"><em>Delivery Result Window</em></span><a class="headerlink" href="#id18" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Delivery Result Window</em></span><a class="headerlink" href="#id19" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>The following information is included:</p>
 <ol class="arabic simple">
 <li><p><strong>Delivery Method</strong>: pre-defined delivery method</p></li>
-<li><p><strong>Platform Link</strong>: users can navigate to the file’s platform location by clicking on the link. Users can also choose to click on the <img alt="downloadresult" src="images/downloadresult.png" style="height: 30px;" /> button to download the file to local machine</p></li>
+<li><p><strong>Platform Link</strong>: users can navigate to the file’s platform location by clicking on the link. Users can also choose to click on the <img alt="downloadresult" src="_images/downloadresult.png" style="height: 30px;" /> button to download the file to local machine</p></li>
 <li><p><strong>Raster WMTS URL</strong>: URL to raster dataset in WMTS format</p></li>
 <li><p><strong>Raster WMTS Expiration</strong>: date and time that the raster WMTS will be expired</p></li>
 <li><p><strong>Vector WMTS URL</strong>: URL to vector results in WMTS format</p></li>
@@ -482,23 +501,23 @@
 <section id="action-feedback-feedback">
 <h2><span class="section-number">1.5. </span>Action: Feedback <img alt="Feedback" src="_images/Feedback.png" style="height: 30px;" /><a class="headerlink" href="#action-feedback-feedback" title="Permalink to this headline"></a></h2>
 <p>Under this tab, users can upload their offline comment in zipped shapefile format for production team to review and fix accordingly. Along with the zipped shapefile that contains comments, users can also provide writing description and imagery example for production team to better understand the issues.</p>
-<figure class="align-center" id="id19">
+<figure class="align-center" id="id20">
 <img alt="OfflineComments" src="_images/OfflineComments.png" />
 <figcaption>
-<p><span class="caption-text"><em>Upload Offline Comments</em></span><a class="headerlink" href="#id19" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Upload Offline Comments</em></span><a class="headerlink" href="#id20" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>Users can also rate the performance of the engineers and production team members that are involved in the production of this order.</p>
-<figure class="align-center" id="id20">
+<figure class="align-center" id="id21">
 <img alt="ProductionRatingEngineer" src="_images/ProductionRatingEngineer.png" />
 <figcaption>
-<p><span class="caption-text"><em>Production Rating - Engineer</em></span><a class="headerlink" href="#id20" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Production Rating - Engineer</em></span><a class="headerlink" href="#id21" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id21">
+<figure class="align-center" id="id22">
 <img alt="ProductionRatingProduction" src="_images/ProductionRatingProduction.png" />
 <figcaption>
-<p><span class="caption-text"><em>Production Rating - Production Team</em></span><a class="headerlink" href="#id21" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><em>Production Rating - Production Team</em></span><a class="headerlink" href="#id22" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
