@@ -243,7 +243,7 @@ Production Selection
 
             *Example of Second-Tier Category*
 
-    Selected Catetitles will be reflected in the **Advanced settings for selected products** section in the settings
+
 
     Under Non-standard tab, users can also define new categories by clicking on :guilabel:`+ Add Category` button. In the pop-up window, category name, geometry type, definition, image example, and annotate rules are required to create this new category.
 
@@ -254,7 +254,15 @@ Production Selection
 **3. Advanced Settings For Selected Products**
 
 
-    In the **Advanced settings for selected products** section, users can modify the catetitle name in the delivery shapefile.
+    In the **Advanced settings for selected products** section, users can modify the capturing rules for catetitles and dictate catetitle name in the delivery shapefile.
+
+
+    .. figure:: /images/OpenAdvancedSettings.gif
+        :alt: OpenAdvancedSettings
+        :align: center
+
+        *Advanced Settings for Selected Catetitles*
+
         
         * Catetitle name in the delivery shapefile can be modified by clicking on the |Edit| button, click on :guilabel:`Save` to save the changes;
         * Special capturing rules can be added through |advancesettings| to provide production team with clear instructions, click on :guilabel:`Update` to save provided information.

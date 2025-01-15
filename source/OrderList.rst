@@ -254,10 +254,24 @@ Production Selection
 **3. Advanced Settings For Selected Products**
 
 
-    In the **Advanced settings for selected products** section, users can modify the catetitle name in the delivery shapefile.
+    In the **Advanced settings for selected products** section, users can modify the capturing rules for catetitles and dictate catetitle name in the delivery shapefile.
+
+
+    .. figure:: /images/OpenAdvancedSettings.gif
+        :alt: OpenAdvancedSettings
+        :align: center
+
+        *Advanced Settings for Selected Catetitles*
+
         
         * Catetitle name in the delivery shapefile can be modified by clicking on the |Edit| button, click on :guilabel:`Save` to save the changes;
-        * Special capturing rules can be added through |advancesettings| to provide production team with clear instructions, click on :guilabel:`Update` to save provided information.
+        * Special capturing rules can be added through |advancesettings| to provide production team with clear instructions, click on :guilabel:`Update` to save provided information. The following information needs to be provided.
+
+            * Category: name of the corresponding catetitle;
+            * Geometry type: type of the geometry of the corresponding catetitle;
+            * Definition: project definition of the catetitle if it is different from the standard Ecopia specifications;
+            * File Upload: imagery example of the provided definition or annotate rule, which can assist production team to better understand the extraction requirements;
+            * Annotate Rules: methods of drawing and capturing if different from Ecopia standard specifications.
 
 
             .. figure:: /images/catetitleAdvancedSettings.png
@@ -265,6 +279,8 @@ Production Selection
                 :align: center
 
                 *Catetitle Advanced Settings*
+
+            
 
         * Users can also dictate whether overlapping is allowed. Users can also adjust the order of overlapping by re-arranging the order of catetitles.
 
