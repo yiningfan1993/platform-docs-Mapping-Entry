@@ -10,11 +10,10 @@ Welcome to the Documentation for the Mapping Oders!
 Mapping Orders provides a space where users can submit extraction order, receive and review vector results.
 
 
-
 .. toctree::
    :numbered:
    :maxdepth: 6
-   :caption: Components
+   :caption: Walkthrough
 
    OrderList
 
