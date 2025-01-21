@@ -170,7 +170,7 @@ If the provided imagery failed to cover the entire provided AOI, the following n
 
 The following actions are available to the users:
 
-#. Users can click on **Coverage Check Report** to review the actual coverage and download shapefile for the missing coverage area;
+#. Users can click on **Coverage Check Report** to review the actual coverage and download shapefile for the missing coverage area by clicking on corresponding button in the pop-up window;
 
     .. figure:: /images/CoverageCheckReport.png
         :alt: CoverageCheckReport
