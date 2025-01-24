@@ -37,7 +37,7 @@ Orders can be in the following status during the process. Users can plan the pro
 Create Order
 ******************
 
-Users can start a new order by clicking on the :guilabel:`Create Order` button located on the top-right of the interface. 
+Users can start a new order by clicking on the |CreateOrder| button located on the top-right of the interface. 
 
 .. The following options will be available:
 
@@ -87,7 +87,7 @@ AOI Data
 
 **1. Add AOI Data**
 
-    By clicking :guilabel:`Add AOI` button on the top right corner, users can upload the AOI file from local machine or through S3 buckets. Once uploaded, the AOI will be listed under **AOI Data** section of the page.
+    By clicking |AddAOI| button on the top right corner, users can upload the AOI file from local machine or through S3 buckets. Once uploaded, the AOI will be listed under **AOI Data** section of the page.
 
     .. figure:: /images/AddAOILocalDrive.png
         :align: center
@@ -124,7 +124,7 @@ Imagery Data
 **1. Add Imagery**
 
 
-    Order's imagery datasets are listed in this section. By clicking on the :guilabel:`Add Imagery` button in the **Imagery Data** section, users can add imagery data to the order by providing the following information:
+    Order's imagery datasets are listed in this section. By clicking on the |AddImagery| button in the **Imagery Data** section, users can add imagery data to the order by providing the following information:
 
         * **Imagery Type**:
 
@@ -181,7 +181,7 @@ The following actions are available to the users:
 #. After the users adjusted the content in the S3 path to provide more coverage, they can choose to :guilabel:`Validate Again` to see if the adjusted content fully covers the AOI;
 #. Users can also choose to :guilabel:`Ignore Missing Area` if the missing area is not crucial to the project. 
 
-Click on :guilabel:`Save & Continue` to save the input data settings and continue to extraction settings.
+Click on |Save&Continue| to save the input data settings and continue to extraction settings.
 
 Extraction Settings
 ====================
@@ -311,7 +311,7 @@ To help production team better understand the extraction requirements, users can
     *Documents for Extraction Request*
 
 
-Click on :guilabel:`Save & Continue` to apply the changes and continue to **Delivery Settings**.
+Click on |Save&Continue| to apply the changes and continue to **Delivery Settings**.
 
 
 
@@ -330,7 +330,7 @@ Users can define how the data should be delivered by providing the following inf
 #. **Delivery Format**: data format that the vector result will be delivered in
 #. **Deliver Grid Size**: grid can be applied to the vector result to split larger polygon into smaller pieces. 
 
-Click on "Save & Continue" to apply all changes and move to **Order Payment** section.
+Click on |Save&Continue| to apply all changes and move to **Quote & Place Order** section.
 
 Quote & Place Order
 =====================
@@ -480,3 +480,15 @@ Users can also rate the performance of the engineers and production team members
 
 .. |downloadresult| image:: /images/downloadresult.png
       :height: 30
+
+.. |CreateOrder| image:: /images/CreateOrder1.png
+      :height: 25
+
+.. |AddAOI| image:: /images/AddAOI.png
+      :height: 25
+
+.. |AddImagery| image:: /images/AddImagery.png
+      :height: 25
+
+.. |Save&Continue| image:: /images/Save&Continue.png
+      :height: 25
